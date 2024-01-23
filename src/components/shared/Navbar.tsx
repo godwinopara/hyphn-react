@@ -1,10 +1,25 @@
 import logo from "../../images/logo-Kachi.png";
 import phone from "../../images/phone.svg";
+import phoneWhite from "../../images/phone-white.svg";
+import searchWhite from "../../images/search-white.svg";
 import hamburger from "../../images/hamburger.svg";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
+
+	const navLinks = [
+		{ url: "#", text: "WOMEN'S HEALTH" },
+		{ url: "#", text: "AESTHETICS" },
+		{ url: "#", text: "MENTAL HEALTH" },
+		{ url: "#", text: "MENTAL WEIGHT LOSS" },
+		{ url: "#", text: "PATIENT RESULTS" },
+		{ url: "#", text: "OUR CENTER & TEAM" },
+		{ url: "#", text: "FOR PATIENTS" },
+		{ url: "#", text: "BLOG" },
+		{ url: "#", text: "CONTACT" },
+	];
 
 	return (
 		<header>
@@ -26,21 +41,13 @@ export default function Navbar() {
 
 			<nav className="hidden lg:block border-t-[1px] border-dark3">
 				<ul className="flex justify-center items-center gap-4 py-5">
-					<li className="text-dark3 cursor-pointer font-bold">
-						<a href="/">HOME</a>
-					</li>
-					<li className="text-dark3 cursor-pointer hover:underline">
-						<a href="/service.html">SERVICES</a>
-					</li>
-					<li className="text-dark3 cursor-pointer hover:underline">
-						<a href="/contact.html">CONTACT US</a>
-					</li>
-					<li className="text-dark3 cursor-pointer hover:underline">
-						<a href="/dr-loliya.html">DR LOLIYA</a>
-					</li>
-					<li className="text-dark3 cursor-pointer hover:underline">
-						<a href="/dr-ken.html">DR KEN</a>
-					</li>
+					{navLinks.map((link) => {
+						return (
+							<li className="text-dark3 cursor-pointer hover:underline">
+								<Link to={link.url}>{link.text}</Link>
+							</li>
+						);
+					})}
 				</ul>
 			</nav>
 
@@ -48,9 +55,9 @@ export default function Navbar() {
 			<nav>
 				<div className="flex justify-between items-center px-8 py-4 bg-dark4 lg:hidden">
 					<div className="flex items-center gap-2">
-						<img src="assets/search-white.svg" alt="search icon" />
+						<img src={searchWhite} alt="search icon" />
 						<div className="flex items-center gap-2">
-							<img src="assets/phone-white.svg" alt="telephone icon" />
+							<img src={phoneWhite} alt="telephone icon" />
 							<span className="text-white leading-150">614-321-7856</span>
 						</div>
 					</div>
@@ -64,21 +71,13 @@ export default function Navbar() {
 							className="p-5 flex flex-col gap-3 mobileNav fixed w-full left-0 top-[128px] bg-white z-10 md:top-44"
 							id="mobileNav"
 						>
-							<li className="text-dark3 cursor-pointer font-bold">
-								<a href="/">HOME</a>
-							</li>
-							<li className="text-dark3 cursor-pointer hover:underline">
-								<a href="/service.html">SERVICES</a>
-							</li>
-							<li className="text-dark3 cursor-pointer hover:underline">
-								<a href="/contact.html">CONTACT US</a>
-							</li>
-							<li className="text-dark3 cursor-pointer hover:underline">
-								<a href="/dr-loliya.html">DR LOLIYA</a>
-							</li>
-							<li className="text-dark3 cursor-pointer font-bold hover:underline">
-								<a href="/dr-ken.html">DR KEN</a>
-							</li>
+							{navLinks.map((link) => {
+								return (
+									<li className="text-dark3 cursor-pointer hover:underline">
+										<Link to={link.url}>{link.text}</Link>
+									</li>
+								);
+							})}
 						</ul>
 					</div>
 				)}
