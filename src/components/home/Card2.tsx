@@ -2,7 +2,7 @@ import img2 from "../../images/img2.png";
 
 export default function Card2() {
 	return (
-		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center my-12">
+		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center mb-10">
 			<div className="rounded-md flex items-center lg:shadow-custom lg:px-10 lg:w-1/2 lg:py-14">
 				<div>
 					<h2 className="text-26 lg:text-32 text-center mb-2 font-medium leading-10">

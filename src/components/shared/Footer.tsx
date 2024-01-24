@@ -2,38 +2,148 @@ import logo from "../../images/logo-Kachi.png";
 import twitter from "../../images/twitter.svg";
 import facebook from "../../images/facebook.svg";
 import instagram from "../../images/instagram.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 	return (
 		<footer className="bg-dark4 text-white py-10 px-8 xl:px-0">
-			<div className="max-w-desktop mx-auto text-center">
-				<img src={logo} alt="" className="mb-6 lg:mb-0 md:w-[60%] lg:w-[40%] mx-auto" />
+			<div className="grid xl:grid-cols-2 gap-x-24 max-w-desktop mx-auto">
+				<form>
+					<h2 className="mb-5">Request Your Consultation Today</h2>
 
-				<nav className="hidden lg:block border-t-[1px] border-black">
-					<ul className="flex justify-center items-center gap-4 py-10">
-						<li className="text-white cursor-pointer hover:underline">
-							<a href="/">HOME</a>
-						</li>
-						<li className="text-white cursor-pointer hover:underline">
-							<a href="/appointment-with-loliya.html">DR LOLIYA</a>
-						</li>
-						<li className="text-white cursor-pointer hover:underline">
-							<a href="/appointment-with-ken.html">DR KEN</a>
-						</li>
-					</ul>
-				</nav>
+					<div>
+						<div className="mb-5">
+							<input
+								type="text"
+								name="firstname"
+								placeholder="First Name*"
+								className="py-3 pl-5 rounded-lg text-gray w-full"
+							/>
+						</div>
+						<div className="mb-5">
+							<input
+								type="text"
+								name="lastname"
+								placeholder="Last Name*"
+								className="py-3 pl-5 rounded-lg text-gray w-full"
+							/>
+						</div>
+						<div className="mb-5">
+							<input
+								type="text"
+								name="email"
+								placeholder="Email Address*"
+								className="py-3 pl-5 rounded-lg w-full text-gray"
+							/>
+						</div>
+						<div className="mb-5">
+							<input
+								type="text"
+								name="phone"
+								placeholder="Phone*"
+								className="py-3 pl-5 rounded-lg w-full text-gray"
+							/>
+						</div>
+						<select name="appointment" className="mb-5 py-3 pl-5 rounded-lg text-gray w-full">
+							<option value="">Have you scheduled an appointment with us before?*</option>
+							<option value="Yes">Yes - I am an Existing Patient</option>
+							<option value="No">No - I am a New Patient</option>
+						</select>
+						<div className="mb-5 w-full">
+							<p className="text-center mb-5">I'm intrested in...(Required)</p>
+							<select name="intrest" className="w-full py-3 pl-5 rounded-lg text-gray">
+								<option>Please Select</option>
+								<option value="breast-procedures">Breast Procedures</option>
+								<option value="face-procedures">Face Procedures</option>
+								<option value="body-procedures">Body Procedures</option>
+								<option value="sexual-wellness">Sexual Wellness</option>
+								<option value="laser-services">Laser Services</option>
+								<option value="medspa-services">Laser Services</option>
+								<option value="acne-treatment">Acne Treatment</option>
+							</select>
+						</div>
 
-				<div className="mb-8">
-					<p className="mb-4">1243 E broad Street, Columbus OH 43205 | (614)-321-7856</p>
-					<p>We are Authentic Comfortable and Different</p>
+						<div className="mb-5 text-center">
+							<p className="mb-5">
+								What you select will give our team an idea of your goals, but it’s okay if you are
+								not 100% sure yet.
+							</p>
+							<p>
+								Do You Have Any Questions Or Details About Your Goals That You Would Like Us To Know
+								(Required)
+							</p>
+						</div>
+						<textarea
+							className="mb-5 w-full p-5 text-gray"
+							name="message"
+							cols={30}
+							rows={10}
+							placeholder="Let Us Know Here"
+						></textarea>
+
+						<div>
+							<button className="bg-black text-white px-8 py-4" type="submit">
+								Submit
+							</button>
+						</div>
+					</div>
+				</form>
+				<div className="max-w-desktop mx-auto mt-20 xl:mt-0">
+					<div className="border-b-[1px] border-black mb-10">
+						<img src={logo} alt="" className="mb-6 lg:mb-0 md:w-[60%] lg:w-[60%] mx-auto" />
+					</div>
+					<div className="grid xl:grid-cols-2">
+						<div className="mb-10 xl:mb-0">
+							<h2 className="mb-3 font-medium text-2xl">Contact Information</h2>
+							<ul className="text-lg">
+								<li>92 N. High St. Dublin, OH 43017</li>
+								<li>
+									<span className="font-medium">PHONE:</span> 614-321-7856
+								</li>
+							</ul>
+
+							<div className="flex items-center gap-x-5 my-5">
+								<img src={twitter} alt="twitter logo" />
+								<img src={instagram} alt="instagram logo" />
+								<img src={facebook} alt="facebook logo" />
+							</div>
+						</div>
+						<nav className="mt-8 xl:mt-0">
+							<h2 className="mb-3 text-2xl font-medium xl:ml-20">Links</h2>
+							<ul className="flex flex-col gap-y-3 xl:ml-20">
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">WOMEN'S HEALTH</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">AESTHETICS</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">MENTAL HEALTH</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">MENTAL WEIGHT LOSS</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">PATIENT RESULTS</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">OUR CENTER & TEAM</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">FOR PATIENTS</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">BLOG</Link>
+								</li>
+								<li className="text-white cursor-pointer hover:underline">
+									<Link to="#">CONTACT</Link>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div className="text-xl text-center mt-20">&copy;2024 Integrative Wellness</div>
 				</div>
-				<div className="flex justify-center gap-x-5 mb-5">
-					<img src={twitter} alt="twitter logo" />
-					<img src={instagram} alt="instagram logo" />
-					<img src={facebook} alt="facebook logo" />
-				</div>
-
-				<div className="text-lg">&copy;2023 Integrative Wellness</div>
 			</div>
 		</footer>
 	);

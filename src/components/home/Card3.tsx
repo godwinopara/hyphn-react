@@ -2,8 +2,8 @@ import img3 from "../../images/img2.png";
 
 export default function Card3() {
 	return (
-		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center my-12">
-			<div className="py-28 md:flex">
+		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center mb-10">
+			<div className="py-10 md:flex">
 				<img src={img3} alt="" className="mx-auto" />
 			</div>
 

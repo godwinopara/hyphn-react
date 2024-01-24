@@ -2,7 +2,7 @@ import img1 from "../../images/img1.png";
 
 export default function Card1() {
 	return (
-		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center my-12">
+		<section className="max-w-desktop mx-auto px-8 xl:px-0 lg:flex lg:items-center lg:justify-center my-10">
 			<div className="py-24 md:flex">
 				<img src={img1} alt="" className="mx-auto" />
 			</div>

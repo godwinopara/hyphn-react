@@ -41,9 +41,9 @@ export default function Navbar() {
 
 			<nav className="hidden lg:block border-t-[1px] border-dark3">
 				<ul className="flex justify-center items-center gap-4 py-5">
-					{navLinks.map((link) => {
+					{navLinks.map((link, id) => {
 						return (
-							<li className="text-dark3 cursor-pointer hover:underline">
+							<li key={id} className="text-dark3 cursor-pointer hover:underline">
 								<Link to={link.url}>{link.text}</Link>
 							</li>
 						);
@@ -71,9 +71,9 @@ export default function Navbar() {
 							className="p-5 flex flex-col gap-3 mobileNav fixed w-full left-0 top-[128px] bg-white z-10 md:top-44"
 							id="mobileNav"
 						>
-							{navLinks.map((link) => {
+							{navLinks.map((link, id) => {
 								return (
-									<li className="text-dark3 cursor-pointer hover:underline">
+									<li key={id} className="text-dark3 cursor-pointer hover:underline">
 										<Link to={link.url}>{link.text}</Link>
 									</li>
 								);
