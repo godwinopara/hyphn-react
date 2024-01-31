@@ -8,7 +8,7 @@ export default function Hero() {
 					<h1 className="font-bold text-26 mb-6 lg:text-40 md:text-48 leading-133">
 						You are Enough
 					</h1>
-					<a href="#" className="inline-block text-white py-4 px-8 bg-black">
+					<a href="/" className="inline-block text-white py-4 px-8 bg-black">
 						Schedule my Visit
 					</a>
 				</div>

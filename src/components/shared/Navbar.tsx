@@ -3,33 +3,89 @@ import phone from "../../images/phone.svg";
 import phoneWhite from "../../images/phone-white.svg";
 import searchWhite from "../../images/search-white.svg";
 import hamburger from "../../images/hamburger.svg";
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import arrow from "../../images/chevron-right.svg";
 
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
 
 	const navLinks = [
-		{ url: "#", text: "WOMEN'S HEALTH" },
-		{ url: "#", text: "AESTHETICS" },
-		{ url: "#", text: "MENTAL HEALTH" },
-		{ url: "#", text: "MENTAL WEIGHT LOSS" },
-		{ url: "#", text: "PATIENT RESULTS" },
-		{ url: "#", text: "OUR CENTER & TEAM" },
-		{ url: "#", text: "FOR PATIENTS" },
-		{ url: "#", text: "BLOG" },
-		{ url: "#", text: "CONTACT" },
+		{
+			url: "#",
+			text: "WOMEN'S HEALTH",
+			sublink: [
+				{ url: "/", text: "Aesthetics" },
+				{ url: "/", text: "Mental Health" },
+				{ url: "/", text: "Mental Weight Loss" },
+			],
+		},
+		{
+			url: "/",
+			text: "AESTHETICS",
+			sublink: [
+				{ url: "/", text: "Body" },
+				{ url: "/", text: "Face And Skin" },
+			],
+		},
+		{
+			url: "/",
+			text: "MENTAL HEALTH",
+			sublink: [
+				{ url: "/", text: "Psychiatric Medication Management" },
+				{ url: "/", text: "Telepsychiatry" },
+				{ url: "/", text: "Genetic Testing" },
+				{ url: "/", text: "ADHD Testing" },
+				{ url: "/", text: "Anxiety and Depression" },
+				{ url: "/", text: "Psychotherapy" },
+			],
+		},
+		{
+			url: "/",
+			text: "MENTAL WEIGHT LOSS",
+			sublink: [
+				{ url: "/", text: "Physician Supervision" },
+				{ url: "/", text: "Prescription Medication" },
+				{ url: "/", text: "GLP-1 Medications" },
+				{ url: "/", text: "Lipotropic Fat Burners" },
+				{ url: "/", text: "B-12 Injections" },
+			],
+		},
+		{ url: "/", text: "PATIENT RESULTS" },
+		{
+			url: "/",
+			text: "OUR CENTER & TEAM",
+			sublink: [
+				{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },
+				{ url: "/", text: "Reword" },
+				{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
+			],
+		},
+		{
+			url: "/",
+			text: "FOR PATIENTS",
+			sublink: [
+				{ url: "/", text: "Offers and Promotions" },
+				{ url: "/", text: "Financing" },
+				{ url: "/", text: "About your Consultation" },
+				{ url: "/", text: "Patient Forms and Instructions" },
+			],
+		},
+		{ url: "/", text: "BLOG" },
+		{ url: "/", text: "CONTACT" },
 	];
+
+	useEffect(() => {}, []);
 
 	return (
 		<header>
 			{/* =========== Logo Nav ============= */}
 
-			<nav className="xl:flex xl:gap-[122px] py-3.5">
+			<nav className="lg:flex lg:gap-[122px] py-3.5">
 				<div className="flex justify-center xl:justify-end xl:w-[60%]">
 					<img src={logo} alt="logo" className="w-[40%]" />
 				</div>
-				<div className="hidden lg:flex justify-center items-center gap-4">
+				<div className="hidden xl:flex justify-center items-center gap-4">
 					<div className="flex items-center gap-5">
 						<img src={phone} alt="telephone icon" />
 						<span className="text-black4 leading-150"> 614-321-7856</span>
@@ -39,13 +95,35 @@ export default function Navbar() {
 
 			{/* ================== Desktop Nav =========== */}
 
-			<nav className="hidden lg:block border-t-[1px] border-dark3">
+			<nav className="hidden xl:block border-t-[1px] border-dark3">
 				<ul className="flex justify-center items-center gap-4 py-5">
 					{navLinks.map((link, id) => {
 						return (
-							<li key={id} className="text-dark3 cursor-pointer hover:underline">
-								<Link to={link.url}>{link.text}</Link>
-							</li>
+							<Fragment key={id}>
+								<li className="text-dark3 cursor-pointer  relative group">
+									<Link className="hover:opacity-50" to={link.url}>
+										{link.text}
+									</Link>
+
+									{link.sublink && (
+										<ul className="absolute pt-6 top-5 left-0 bg-white w-[300px] hidden group-hover:block">
+											{link.sublink.map((sub, id) => {
+												return (
+													<li
+														key={id}
+														className=" py-3 px-4 border-b flex justify-between items-center"
+													>
+														<Link className="hover:opacity-50" to={sub.url}>
+															{sub.text}
+														</Link>
+														<img src={arrow} alt="arrow" />
+													</li>
+												);
+											})}
+										</ul>
+									)}
+								</li>
+							</Fragment>
 						);
 					})}
 				</ul>
@@ -53,7 +131,7 @@ export default function Navbar() {
 
 			{/* ========== Mobile Nav ================= */}
 			<nav>
-				<div className="flex justify-between items-center px-8 py-4 bg-dark4 lg:hidden">
+				<div className="flex justify-between items-center px-8 py-4 bg-dark4 xl:hidden">
 					<div className="flex items-center gap-2">
 						<img src={searchWhite} alt="search icon" />
 						<div className="flex items-center gap-2">
