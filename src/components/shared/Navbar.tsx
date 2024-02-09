@@ -12,7 +12,7 @@ export default function Navbar() {
 
 	const navLinks = [
 		{
-			url: "#",
+			url: "/womens-health",
 			text: "WOMEN'S HEALTH",
 			sublink: [
 				{ url: "/", text: "Aesthetics" },

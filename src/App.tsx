@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DrKenProfile from "./pages/DrKenProfile";
 import DrLoliyaProfile from "./pages/DrLoliyaProfile";
+import WomensHealth from "./pages/WomensHealth";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
 	{
 		path: "/dr-loliya",
 		element: <DrLoliyaProfile />,
+	},
+	{
+		path: "/womens-health",
+		element: <WomensHealth />,
 	},
 ]);
 
