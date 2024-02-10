@@ -29,7 +29,7 @@ export default function Navbar() {
 			],
 		},
 		{
-			url: "/",
+			url: "/mental-health",
 			text: "MENTAL HEALTH",
 			sublink: [
 				{ url: "/", text: "Psychiatric Medication Management" },
@@ -41,7 +41,7 @@ export default function Navbar() {
 			],
 		},
 		{
-			url: "/",
+			url: "/mental-weight-loss",
 			text: "MENTAL WEIGHT LOSS",
 			sublink: [
 				{ url: "/", text: "Physician Supervision" },

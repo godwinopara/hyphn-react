@@ -1,4 +1,4 @@
-export default function AestheticsCard3() {
+export default function Card() {
 	return (
 		<section className="bg-dark3 py-14 text-white px-6 xl:px-0">
 			<div className="max-w-desktop grid place-items-center mx-auto">

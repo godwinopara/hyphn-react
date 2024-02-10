@@ -4,6 +4,8 @@ import DrKenProfile from "./pages/DrKenProfile";
 import DrLoliyaProfile from "./pages/DrLoliyaProfile";
 import WomensHealth from "./pages/WomensHealth";
 import Asthetics from "./pages/Asthetics";
+import MentalHealth from "./pages/MentalHealth";
+import MentalWeightLoss from "./pages/MentalWeightLoss";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
 	{
 		path: "/aesthetics",
 		element: <Asthetics />,
+	},
+	{
+		path: "/mental-health",
+		element: <MentalHealth />,
+	},
+	{
+		path: "/mental-weight-loss",
+		element: <MentalWeightLoss />,
 	},
 ]);
 
