@@ -22,6 +22,7 @@ module.exports = {
 				"green-700": "#06570B",
 				gray: "#828282",
 				gray1: "#D9D9D9",
+				gray3: "#BFBFBF",
 				dark1: "#d1d2d1",
 				dark2: "#b3b3b3",
 				dark3: "#2B2B2A",
@@ -30,6 +31,7 @@ module.exports = {
 			fontSize: {
 				3.5: "0.875rem",
 				26: "1.625rem",
+				30: "1.875rem",
 				32: "2rem",
 				40: "2.5rem",
 				48: "3rem",

@@ -15,13 +15,13 @@ export default function Navbar() {
 			url: "/womens-health",
 			text: "WOMEN'S HEALTH",
 			sublink: [
-				{ url: "/", text: "Aesthetics" },
+				{ url: "/aesthetics", text: "Aesthetics" },
 				{ url: "/", text: "Mental Health" },
 				{ url: "/", text: "Mental Weight Loss" },
 			],
 		},
 		{
-			url: "/",
+			url: "/aesthetics",
 			text: "AESTHETICS",
 			sublink: [
 				{ url: "/", text: "Body" },

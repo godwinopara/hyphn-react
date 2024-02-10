@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DrKenProfile from "./pages/DrKenProfile";
 import DrLoliyaProfile from "./pages/DrLoliyaProfile";
 import WomensHealth from "./pages/WomensHealth";
+import Asthetics from "./pages/Asthetics";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
 	{
 		path: "/womens-health",
 		element: <WomensHealth />,
+	},
+	{
+		path: "/aesthetics",
+		element: <Asthetics />,
 	},
 ]);
 
