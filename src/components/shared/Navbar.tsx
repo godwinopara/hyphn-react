@@ -53,7 +53,7 @@ export default function Navbar() {
 		},
 		{ url: "/", text: "PATIENT RESULTS" },
 		{
-			url: "/",
+			url: "/our-team",
 			text: "OUR CENTER & TEAM",
 			sublink: [
 				{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },

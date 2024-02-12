@@ -6,6 +6,7 @@ import WomensHealth from "./pages/WomensHealth";
 import Asthetics from "./pages/Asthetics";
 import MentalHealth from "./pages/MentalHealth";
 import MentalWeightLoss from "./pages/MentalWeightLoss";
+import OurTeam from "./pages/OurTeam";
 
 const Home = lazy(() => import("./pages/Home"));
 
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
 	{
 		path: "/mental-weight-loss",
 		element: <MentalWeightLoss />,
+	},
+	{
+		path: "/our-team",
+		element: <OurTeam />,
 	},
 ]);
 
