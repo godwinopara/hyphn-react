@@ -51,7 +51,7 @@ export default function Navbar() {
 				{ url: "/", text: "B-12 Injections" },
 			],
 		},
-		{ url: "/", text: "PATIENT RESULTS" },
+		{ url: "/patients", text: "PATIENT RESULTS" },
 		{
 			url: "/our-team",
 			text: "OUR CENTER & TEAM",
@@ -62,7 +62,7 @@ export default function Navbar() {
 			],
 		},
 		{
-			url: "/",
+			url: "/patients",
 			text: "FOR PATIENTS",
 			sublink: [
 				{ url: "/", text: "Offers and Promotions" },

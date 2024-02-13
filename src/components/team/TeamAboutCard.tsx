@@ -1,6 +1,6 @@
 import user from "../../images/user.png";
 
-export default function AboutCard() {
+export default function TeamAboutCard() {
 	return (
 		<div className="relative px-6 md:px-20 py-32 rounded-xl bg-gray1 flex flex-col items-center justify-center text-center mb-44 lg:mb-0 last:mb-0">
 			<img src={user} alt="" className="absolute -top-24 h-[192px] w-[192px]" />

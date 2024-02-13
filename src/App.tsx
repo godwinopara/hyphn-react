@@ -1,14 +1,15 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DrKenProfile from "./pages/DrKenProfile";
-import DrLoliyaProfile from "./pages/DrLoliyaProfile";
-import WomensHealth from "./pages/WomensHealth";
-import Asthetics from "./pages/Asthetics";
-import MentalHealth from "./pages/MentalHealth";
-import MentalWeightLoss from "./pages/MentalWeightLoss";
-import OurTeam from "./pages/OurTeam";
 
 const Home = lazy(() => import("./pages/Home"));
+const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
+const DrLoliyaProfile = lazy(() => import("./pages/DrLoliyaProfile"));
+const WomensHealth = lazy(() => import("./pages/WomensHealth"));
+const Asthetics = lazy(() => import("./pages/Asthetics"));
+const MentalHealth = lazy(() => import("./pages/MentalHealth"));
+const MentalWeightLoss = lazy(() => import("./pages/MentalWeightLoss"));
+const OurTeam = lazy(() => import("./pages/OurTeam"));
+const PatientsResult = lazy(() => import("./pages/PatientsResult"));
 
 const router = createBrowserRouter([
 	{
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
 	{
 		path: "/our-team",
 		element: <OurTeam />,
+	},
+	{
+		path: "/patients",
+		element: <PatientsResult />,
 	},
 ]);
 
