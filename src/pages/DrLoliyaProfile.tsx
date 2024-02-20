@@ -1,8 +1,8 @@
 import { useState } from "react";
 import AboutCard from "../components/drloliya/AboutCard";
-import Card1 from "../components/drloliya/DrLoliyaCard1";
-import Card2 from "../components/drloliya/DrLoliyaCard2";
-import Card3 from "../components/drloliya/DrLoliyaCard3";
+import Card1 from "../components/drloliya/DrLoliyaFirstCard";
+import Card2 from "../components/drloliya/DrLoliyaSecondCard";
+import Card3 from "../components/drloliya/DrLoliyaThirdCard";
 import Hero from "../components/drloliya/Hero";
 import LoliyaModal from "../components/drloliya/LoliyaModal";
 

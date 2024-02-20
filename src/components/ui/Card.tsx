@@ -25,7 +25,9 @@ export default function Card({ children, img, heading, reverse, dark }: CardProp
 				}`}
 			>
 				<div className="px-6 md:px-0">
-					<h2 className="text-xl md:text-32 leading-8 uppercase mb-6 font-bold">{heading}</h2>
+					<h2 className="text-xl md:text-26 xl:text-32 leading-8 uppercase mb-6 font-bold">
+						{heading}
+					</h2>
 					<div>{children}</div>
 				</div>
 			</div>
