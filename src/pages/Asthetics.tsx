@@ -1,5 +1,4 @@
 import AestheticsRecognition from "../components/aesthetics/AestheticsRecognition";
-import AestheticConsulation from "../components/aesthetics/BookConsulation";
 import BookConsulation from "../components/shared/BookConsulation";
 // import Card from "../components/shared/Card";
 import Card2 from "../components/shared/SharedCard";
@@ -26,6 +25,7 @@ export default function Asthetics() {
 				<a
 					href="https://book.mypatientnow.com/practice/LBShyy"
 					target="_blank"
+					rel="noreferrer"
 					className="border-2 border-dark w-full block mt-10 py-3 px-4 text-xl font-semibold text-dark leading-10 text-center hover:bg-dark hover:text-white"
 				>
 					Book Consultation

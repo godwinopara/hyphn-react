@@ -9,9 +9,11 @@ export default function KenConsulation({ openModal }: KenConsulationProps) {
 				<h2 className="text-xl font-medium md:text-3xl xl:text-32  leading-10 mb-6">
 					Book Appointment with DR. KEN
 				</h2>
+				<h3 className="mb-4 font-medium text-xl">Let's Make Progress Together</h3>
 				<p className="max-w-4xl mx-auto mb-8">
-					Lorem ipsum dolor sit amet consectetur. Tristique ullamcorper tincidunt elementum luctus
-					cursus ligula. Pulvinar fermentum in consectetur non suspendisse eget elementum
+					Our surgeons have positively changed the lives of thousands of patients, and we’d love the
+					opportunity to help you too. We invite you to get in touch with us today to discuss your
+					goals and schedule your initial consultation.
 				</p>
 				<div className="flex flex-col justify-center gap-y-5 md:gap-y-0 md:gap-x-5 md:flex-row">
 					<button

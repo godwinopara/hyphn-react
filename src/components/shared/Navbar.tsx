@@ -5,7 +5,7 @@ import searchWhite from "../../images/search-white.svg";
 import hamburger from "../../images/hamburger.svg";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import arrow from "../../images/chevron-right.svg";
+// import arrow from "../../images/chevron-right.svg";
 
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
