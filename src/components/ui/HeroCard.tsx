@@ -13,7 +13,7 @@ export default function HeroCard({ heading, img }: HeroCardProps) {
 					</h2>
 				</div>
 			</div>
-			<div className=" md:w-1/2">
+			<div className="mb-8 md:mb-0 md:w-1/2">
 				<img src={img} alt="" className="mx-auto w-full h-full xl:m-0" />
 			</div>
 		</section>

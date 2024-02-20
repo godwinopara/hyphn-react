@@ -9,7 +9,7 @@ export default function HomeForthCard() {
 				are not all meant to have the same appearance. What sets us apart is our unique approach,
 				aimed at highlighting and bringing out the true beauty that makes you distinct.
 			</p>
-			<ul className="list-disc">
+			<ul className="list-disc list-inside">
 				<li>Botox</li>
 				<li>Lip Fillers</li>
 				<li>Body contouring</li>

@@ -10,9 +10,6 @@ export default function MentalWeightRecognition() {
 					programs for each individual that walks through our doors. Using the patient’s unique
 					biomarkers and medical history…
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 			<Recognition recognition="Prescription medication">
 				<p>
@@ -21,9 +18,6 @@ export default function MentalWeightRecognition() {
 					the need for weight loss intervention is great. FDA approved medication for weight loss
 					works by suppressing appetite…
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 			<Recognition recognition="GLP-1 Medications">
 				<p>
@@ -31,9 +25,6 @@ export default function MentalWeightRecognition() {
 					for long-term weight loss on the market. Research has shown that patients using GLP-1s can
 					lose between 15% and 20% of their bodyweight. 
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 			<Recognition recognition="Lipotropic Fat Burners">
 				<p>
@@ -42,9 +33,6 @@ export default function MentalWeightRecognition() {
 					Lipotropic (lipo) shots are fat burning injections of vitamins and amino acids that
 					encourage the body to burn fat. These compounds help accelerate…
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 			<Recognition recognition="B-12 Injections">
 				<p>
@@ -52,9 +40,6 @@ export default function MentalWeightRecognition() {
 					functioning and health of nerve tissue, brain function and the production of red blood
 					cells. (Basically, an energy booster with vitamins.)…
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 			<Recognition recognition="Psychotherapy">
 				<p>
@@ -63,9 +48,6 @@ export default function MentalWeightRecognition() {
 					programs for each individual that walks through our doors. Using the patient’s unique
 					biomarkers and medical history…
 				</p>
-				<div className="flex justify-center mt-8">
-					<button className="uppercase bg-dark4 px-8 py-2 text-white">View Service</button>
-				</div>
 			</Recognition>
 		</section>
 	);

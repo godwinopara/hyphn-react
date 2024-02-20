@@ -96,7 +96,7 @@ export default function Footer() {
 						<div className="mb-10 xl:mb-0">
 							<h2 className="mb-3 font-medium text-2xl">Contact Information</h2>
 							<ul className="text-lg">
-								<li>92 N. High St. Dublin, OH 43017</li>
+								<li>1243 E Broad Street, Columbus OH 43205</li>
 								<li>
 									<span className="font-medium">PHONE:</span> 614-321-7856
 								</li>

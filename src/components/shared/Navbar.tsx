@@ -15,64 +15,67 @@ export default function Navbar() {
 			url: "/womens-health",
 			text: "WOMEN'S HEALTH",
 			sublink: [
-				{ url: "/aesthetics", text: "Aesthetics" },
-				{ url: "/", text: "Mental Health" },
-				{ url: "/", text: "Mental Weight Loss" },
+				// { url: "/aesthetics", text: "Aesthetics" },
+				// { url: "/", text: "Mental Health" },
+				// { url: "/", text: "Mental Weight Loss" },
 			],
 		},
 		{
 			url: "/aesthetics",
 			text: "AESTHETICS",
 			sublink: [
-				{ url: "/", text: "Body" },
-				{ url: "/", text: "Face And Skin" },
+				// { url: "/", text: "Body" },
+				// { url: "/", text: "Face And Skin" },
 			],
 		},
 		{
 			url: "/mental-health",
 			text: "MENTAL HEALTH",
 			sublink: [
-				{ url: "/", text: "Psychiatric Medication Management" },
-				{ url: "/", text: "Telepsychiatry" },
-				{ url: "/", text: "Genetic Testing" },
-				{ url: "/", text: "ADHD Testing" },
-				{ url: "/", text: "Anxiety and Depression" },
-				{ url: "/", text: "Psychotherapy" },
+				// { url: "/", text: "Psychiatric Medication Management" },
+				// { url: "/", text: "Telepsychiatry" },
+				// { url: "/", text: "Genetic Testing" },
+				// { url: "/", text: "ADHD Testing" },
+				// { url: "/", text: "Anxiety and Depression" },
+				// { url: "/", text: "Psychotherapy" },
 			],
 		},
 		{
 			url: "/mental-weight-loss",
 			text: "MENTAL WEIGHT LOSS",
 			sublink: [
-				{ url: "/", text: "Physician Supervision" },
-				{ url: "/", text: "Prescription Medication" },
-				{ url: "/", text: "GLP-1 Medications" },
-				{ url: "/", text: "Lipotropic Fat Burners" },
-				{ url: "/", text: "B-12 Injections" },
+				// { url: "/", text: "Physician Supervision" },
+				// { url: "/", text: "Prescription Medication" },
+				// { url: "/", text: "GLP-1 Medications" },
+				// { url: "/", text: "Lipotropic Fat Burners" },
+				// { url: "/", text: "B-12 Injections" },
 			],
 		},
-		{ url: "/patients", text: "PATIENT RESULTS" },
+		// { url: "/patients", text: "PATIENT RESULTS" },
 		{
 			url: "/our-team",
 			text: "OUR CENTER & TEAM",
-			sublink: [
-				{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },
-				{ url: "/", text: "Reword" },
-				{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
-			],
+			// sublink: [
+			// 	{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },
+			// 	{ url: "/", text: "Reword" },
+			// 	{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
+			// ],
 		},
-		{
-			url: "/patients",
-			text: "FOR PATIENTS",
-			sublink: [
-				{ url: "/", text: "Offers and Promotions" },
-				{ url: "/", text: "Financing" },
-				{ url: "/", text: "About your Consultation" },
-				{ url: "/", text: "Patient Forms and Instructions" },
-			],
-		},
-		{ url: "/", text: "BLOG" },
-		{ url: "/", text: "CONTACT" },
+		{ url: "/dr-loliya", text: "DR. LOLIYA" },
+		{ url: "/dr-ken", text: "DR. KEN" },
+
+		// {
+		// 	url: "/patients",
+		// 	text: "FOR PATIENTS",
+		// 	sublink: [
+		// 		{ url: "/", text: "Offers and Promotions" },
+		// 		{ url: "/", text: "Financing" },
+		// 		{ url: "/", text: "About your Consultation" },
+		// 		{ url: "/", text: "Patient Forms and Instructions" },
+		// 	],
+		// },
+		// { url: "/", text: "BLOG" },
+		// { url: "/", text: "CONTACT" },
 	];
 
 	useEffect(() => {}, []);
@@ -105,7 +108,7 @@ export default function Navbar() {
 										{link.text}
 									</Link>
 
-									{link.sublink && (
+									{/* {link?.sublink && (
 										<ul className="absolute pt-6 top-5 left-0 bg-white w-[300px] hidden group-hover:block">
 											{link.sublink.map((sub, id) => {
 												return (
@@ -113,15 +116,15 @@ export default function Navbar() {
 														key={id}
 														className=" py-3 px-4 border-b flex justify-between items-center"
 													>
-														<Link className="hover:opacity-50" to={sub.url}>
-															{sub.text}
+														<Link className="hover:opacity-50" to={sub?.url}>
+															{sub?.text}
 														</Link>
 														<img src={arrow} alt="arrow" />
 													</li>
 												);
 											})}
 										</ul>
-									)}
+									)} */}
 								</li>
 							</Fragment>
 						);
