@@ -82,9 +82,9 @@ export default function Navbar() {
 			{/* =========== Logo Nav ============= */}
 
 			<nav className="lg:flex lg:gap-[122px] py-3.5">
-				<div className="flex justify-center xl:justify-end xl:w-[60%]">
+				<Link to="/" className="flex justify-center xl:justify-end xl:w-[60%]">
 					<img src={logo} alt="logo" className="w-[40%]" />
-				</div>
+				</Link>
 				<div className="hidden xl:flex justify-center items-center gap-4">
 					<div className="flex items-center gap-5">
 						<img src={phone} alt="telephone icon" />

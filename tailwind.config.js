@@ -7,7 +7,8 @@ module.exports = {
 				gradient: "linear-gradient(0deg, rgba(96, 96, 95, 0.20) 0%, rgba(96, 96, 95, 0.20) 100%)",
 				"green-white":
 					"radial-gradient(115.27% 77.75% at 79.2% 44.53%, rgba(214, 227, 214, 0.00) 0%, #D6E3D6 100%)",
-				heroBg: "/assets/heroImg.png",
+				heroBg: "url('../src/images/heroImg.png')",
+				img: "url('../src/images/weight-loss.png')",
 			},
 
 			boxShadow: {
@@ -21,8 +22,11 @@ module.exports = {
 				"green-600": "#2F7334",
 				"green-700": "#06570B",
 				gray: "#828282",
+				gray2: "#333333",
 				gray1: "#D9D9D9",
 				gray3: "#BFBFBF",
+				gray4: "#e9e9e7",
+				dark: "#3c3c3b",
 				dark1: "#d1d2d1",
 				dark2: "#b3b3b3",
 				dark3: "#2B2B2A",

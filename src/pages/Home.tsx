@@ -1,8 +1,8 @@
-import Card1 from "../components/home/Card1";
-import Card2 from "../components/home/Card2";
-import Card3 from "../components/home/Card3";
-import Card4 from "../components/home/Card4";
 import Hero from "../components/home/Hero";
+import HomeFirstCard from "../components/home/HomeFirstCard";
+import HomeForthCard from "../components/home/HomeForthCard";
+import HomeSecondCard from "../components/home/HomeSecondCard";
+import HomeThirdCard from "../components/home/HomeThirdCard";
 import Partners from "../components/shared/Partners";
 import MainLayout from "../layouts/MainLayout";
 
@@ -10,10 +10,10 @@ export default function Home() {
 	return (
 		<MainLayout>
 			<Hero />
-			<Card1 />
-			<Card2 />
-			<Card3 />
-			<Card4 />
+			<HomeFirstCard />
+			<HomeSecondCard />
+			<HomeThirdCard />
+			<HomeForthCard />
 			<Partners />
 		</MainLayout>
 	);
