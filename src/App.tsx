@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import loader from "./images/loader.svg";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -50,9 +51,17 @@ const router = createBrowserRouter([
 	},
 ]);
 
+const Loader = () => {
+	return (
+		<div className="flex items-center justify-center h-screen ">
+			<img src={loader} alt="" className="w-[5%]" />
+		</div>
+	);
+};
+
 function App() {
 	return (
-		<Suspense fallback={"loading...."}>
+		<Suspense fallback={<Loader />}>
 			<RouterProvider router={router} />
 		</Suspense>
 	);
