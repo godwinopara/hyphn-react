@@ -21,6 +21,7 @@ module.exports = {
 				"green-500": "#598F5C",
 				"green-600": "#2F7334",
 				"green-700": "#06570B",
+				lime: "#D6E3D6",
 				gray: "#828282",
 				gray2: "#333333",
 				gray1: "#D9D9D9",
@@ -51,7 +52,7 @@ module.exports = {
 				18: "4.4375rem",
 			},
 			maxWidth: {
-				desktop: "1140px",
+				desktop: "1139px",
 			},
 			screens: {
 				md: "767px",

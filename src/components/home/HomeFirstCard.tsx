@@ -1,21 +1,33 @@
-import Card from "../ui/Card";
-import img from "../../images/img1.png";
+// import Card from "../ui/Card";
+// import img from "../../images/img1.png";
+import building from "../../images/building.png";
+import { Link } from "react-router-dom";
 
 export default function HomeFirstCard() {
 	return (
-		<Card img={img} heading="Integrative Medicine">
-			<h3 className="my-4 leading-8 font-medium">Find out what makes us Integrative.</h3>
-			<p>
-				Through experience, we've discovered that one's outward appearance often mirrors one's inner
-				well-being. Dr. Idoniboye, board-certified in obesity medicine, recognizes the impact of
-				unhealthy weight on overall health, along with the significance of balanced hormones and
-				nurtured mental health. Addressing not just diagnoses but the root causes of conditions,
-				Kenneth Nwogu, a board-certified psychiatric nurse, empowers you to overcome challenges. His
-				practical and caring approach emphasizes that you are part of a compassionate team genuinely
-				interested in your wellness. We consistently affirm, "You are Enough," recognizing that each
-				person harbors the internal tools needed to become their best selves. Let us guide you
-				towards this realization and support your journey to optimal well-being.
-			</p>
-		</Card>
+		<section className="lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
+			<div className="w-[45%] border-e-4 border-black">
+				<img src={building} alt="" className="mx-auto" />
+			</div>
+
+			<div className="w-[55%] ml-5">
+				<h2 className="font-medium text-xl leading-8 mb-1">Welcome To</h2>
+				<h3 className="text-3xl leading-10 font-medium mb-1">
+					Integrative Wellness in Columbus Ohio
+				</h3>
+				<p className="mb-3">
+					Welcome to Integrative Wellness, where our team specializes in behavioral health services,
+					weight loss programs, health & wellness, and aesthetic medicine. We are committed to
+					supporting you through your healthcare journey with treatments that are tailored to your
+					specific needs. Utilizing advanced methods and state-of-the-art Alma technology, our team
+					offers lipotropic injections, behavioral medication management, cellulite reduction, and
+					more. We strive to help you heal from the inside out. Schedule your appointment at our
+					Columbus, OH office today.
+				</p>
+				<Link to="/about" className="bg-dark3 py-4 px-8 text-white leading-6 inline-block">
+					About us
+				</Link>
+			</div>
+		</section>
 	);
 }
