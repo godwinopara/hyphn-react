@@ -1,20 +1,24 @@
-import Card from "../ui/Card";
-import img from "../../images/img4.png";
+import map from "../../images/map.svg";
 
 export default function HomeForthCard() {
 	return (
-		<Card img={img} heading="Aesthetics Treatments" reverse>
-			<p className="mb-3">
-				Our highly skilled providers appreciate each person's individuality, acknowledging that we
-				are not all meant to have the same appearance. What sets us apart is our unique approach,
-				aimed at highlighting and bringing out the true beauty that makes you distinct.
-			</p>
-			<ul className="list-disc list-inside">
-				<li>Botox</li>
-				<li>Lip Fillers</li>
-				<li>Body contouring</li>
-				<li>Skin tightening with radiofrequency and Ultrasound</li>
-			</ul>
-		</Card>
+		<section className="max-w-desktop mx-auto grid grid-cols-2 items-center gap-x-20 py-20">
+			<div>
+				<img src={map} alt="" />
+			</div>
+			<div className="text-center text-xl bg-contactBg bg-no-repeat bg-center py-10 h-full">
+				<h4 className="font-medium text-xl leading-8 mb-3">We Invite You To</h4>
+				<h2 className="font-medium text-32 leading-10 mb-3">Contact Our Practice</h2>
+				<h3 className="font-medium mb-5">ADDRESS</h3>
+				<div className="mb-8">1243 E. Broad St </div>
+				<div className="mb-8">Columbus, OH 43205</div>
+				<div className="mb-8">
+					<strong className="text-xl">PHONE:</strong> 614-321-7856
+				</div>
+				<div>
+					<strong>FAX:</strong> 614-321-7856
+				</div>
+			</div>
+		</section>
 	);
 }

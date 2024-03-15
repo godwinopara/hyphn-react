@@ -6,7 +6,7 @@
 
 @layer {
 	body {
-		font-family: "Open Sans", sans-serif;
+		font-family: "Poppins", sans-serif;
 		@apply text-gray2;
 	}
 

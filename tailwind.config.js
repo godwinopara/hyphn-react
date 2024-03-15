@@ -9,11 +9,18 @@ module.exports = {
 					"radial-gradient(115.27% 77.75% at 79.2% 44.53%, rgba(214, 227, 214, 0.00) 0%, #D6E3D6 100%)",
 				heroBg: "url('../src/images/heroImg.png')",
 				img: "url('../src/images/weight-loss.png')",
+				img5: "url('../src/images/img5.jpeg')",
+				contactBg: "url('../src/images/contact-bg.svg')",
 			},
 
 			boxShadow: {
 				custom: "0px 5px 15px 0px rgba(0, 0, 0, 0.15)",
 			},
+
+			backgroundPosition: {
+				"top-mid": "50% 28%",
+			},
+
 			colors: {
 				"green-200": "#D6E3D6",
 				"green-300": "#ACC7AE",
@@ -32,6 +39,7 @@ module.exports = {
 				dark2: "#b3b3b3",
 				dark3: "#2B2B2A",
 				dark4: "#60605F",
+				dark5: "#2B2B2A80",
 			},
 			fontSize: {
 				3.5: "0.875rem",

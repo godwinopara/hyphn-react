@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 
 export default function HomeFirstCard() {
 	return (
-		<section className="lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-			<div className="w-[45%] border-e-4 border-black">
+		<section className="px-6 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
+			<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-e-4 border-black">
 				<img src={building} alt="" className="mx-auto" />
 			</div>
 
-			<div className="w-[55%] ml-5">
+			<div className="lg:w-[55%] lg:ml-5 pt-8">
 				<h2 className="font-medium text-xl leading-8 mb-1">Welcome To</h2>
-				<h3 className="text-3xl leading-10 font-medium mb-1">
+				<h3 className="text-2xl  lg:text-3xl leading-10 font-medium mb-1">
 					Integrative Wellness in Columbus Ohio
 				</h3>
-				<p className="mb-3">
+				<p className="mb-8 lg:mb-3">
 					Welcome to Integrative Wellness, where our team specializes in behavioral health services,
 					weight loss programs, health & wellness, and aesthetic medicine. We are committed to
 					supporting you through your healthcare journey with treatments that are tailored to your
