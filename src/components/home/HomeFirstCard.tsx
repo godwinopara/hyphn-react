@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function HomeFirstCard() {
 	return (
 		<section className="px-6 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-			<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-e-4 border-black">
+			<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-b-0 lg:border-e-4 border-black">
 				<img src={building} alt="" className="mx-auto" />
 			</div>
 

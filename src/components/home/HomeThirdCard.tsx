@@ -1,21 +1,24 @@
-import Card from "../ui/Card";
-import img from "../../images/img2.png";
 import loliya from "../../images/loliya1.png";
 import ken from "../../images/ken.png";
+import loliya1 from "../../images/loliya-mobile.png";
+import ken1 from "../../images/ken-mobile.png";
 import { Link } from "react-router-dom";
 
 export default function HomeThirdCard() {
 	return (
-		<section>
+		<section className="px-6">
 			<div className="lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-				<div className="w-[40%] border-e-4 border-black pr-11">
-					<img src={loliya} alt="" className="mx-auto" />
+				<div className="pb-8 lg:w-[45%] border-b-4 lg:border-b-0 lg:border-e-4 border-black pr-11">
+					<img src={loliya} alt="" className="mx-auto hidden lg:block" />
+					<img src={loliya1} alt="" className="mx-auto  lg:hidden" />
 				</div>
 
-				<div className="w-[55%] ml-5">
+				<div className="pt-10 lg:w-[55%] lg:ml-5">
 					<h2 className="font-medium text-xl leading-8 mb-1">Meet</h2>
-					<h3 className="text-3xl leading-10 font-medium mb-1">Dr. Loliya Idoniboye, D.O., MPH</h3>
-					<p className="mb-3">
+					<h3 className="text-xl lg:text-3xl leading-10 font-medium mb-4">
+						Dr. Loliya Idoniboye, D.O., MPH
+					</h3>
+					<p className="mb-5">
 						Dr. Loliya Idoniboye is a board-certified family care physician who is passionate about
 						preventive care, women's wellness, and helping individuals reach their weight loss
 						goals. She studied at the Philadelphia College of Osteopathic Medicine and completed a
@@ -29,17 +32,18 @@ export default function HomeThirdCard() {
 				</div>
 			</div>
 
-			<div className="lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-				<div className="w-[40%] border-e-4 border-black pr-11">
-					<img src={ken} alt="" className="mx-auto" />
+			<div className="px-6 lg:px-0 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
+				<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-b-0 lg:border-e-4 border-black pr-11">
+					<img src={ken} alt="" className="mx-auto hidden lg:block" />
+					<img src={ken1} alt="" className="mx-auto  lg:hidden" />
 				</div>
 
-				<div className="w-[55%] ml-5">
+				<div className="pt-10 lg:w-[55%] lg:ml-5">
 					<h2 className="font-medium text-xl leading-8 mb-1">Meet</h2>
-					<h3 className="text-3xl leading-10 font-medium mb-1">
+					<h3 className="text-xl lg:text-3xl leading-10 font-medium mb-4">
 						Kenneth Nwogu MSN, APRN, FNP-C, PMHNP-BC
 					</h3>
-					<p className="mb-3">
+					<p className="mb-5">
 						As a board-certified family and psychiatric-mental health nurse practitioner, Kenneth
 						Nwogu is highly skilled in treating individuals with anxiety, depression, ADHD,
 						substance use disorders, and other psychiatric conditions. Having earned his master's

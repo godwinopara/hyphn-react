@@ -2,13 +2,13 @@ import map from "../../images/map.svg";
 
 export default function HomeForthCard() {
 	return (
-		<section className="max-w-desktop mx-auto grid grid-cols-2 items-center gap-x-20 py-20">
-			<div>
+		<section className="max-w-desktop mx-auto px-6 lg:grid lg:grid-cols-2 items-center gap-x-20 py-20">
+			<div className="mb-10">
 				<img src={map} alt="" />
 			</div>
-			<div className="text-center text-xl bg-contactBg bg-no-repeat bg-center py-10 h-full">
+			<div className="text-center text-xl bg-contain bg-contactBg bg-no-repeat bg-center py-10 h-full ">
 				<h4 className="font-medium text-xl leading-8 mb-3">We Invite You To</h4>
-				<h2 className="font-medium text-32 leading-10 mb-3">Contact Our Practice</h2>
+				<h2 className="font-medium text-26 lg:text-32 leading-10 mb-3">Contact Our Practice</h2>
 				<h3 className="font-medium mb-5">ADDRESS</h3>
 				<div className="mb-8">1243 E. Broad St </div>
 				<div className="mb-8">Columbus, OH 43205</div>
