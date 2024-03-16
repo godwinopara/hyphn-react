@@ -98,7 +98,7 @@ export default function Navbar() {
 
 			{/* ================== Desktop Nav =========== */}
 
-			<nav className="hidden xl:block border-t-[1px] border-dark3">
+			<nav className="hidden xl:block border-t-[1px] border-dark3 bg-secondary">
 				<ul className="flex justify-center items-center gap-4 py-5">
 					{navLinks.map((link, id) => {
 						return (

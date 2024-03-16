@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
 	return (
-		<footer className="bg-dark4 text-white py-10 px-8 xl:px-0">
+		<footer className="bg-primary2 text-white py-10 px-8 xl:px-0">
 			<div className="grid xl:grid-cols-2 gap-x-24 max-w-desktop mx-auto">
 				<form>
 					<h2 className="mb-5">Request Your Consultation Today</h2>

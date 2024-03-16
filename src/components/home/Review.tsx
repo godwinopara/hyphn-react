@@ -3,7 +3,7 @@ import rating from "../../images/rating.svg";
 
 export default function Review() {
 	return (
-		<section className="px-6 bg-dark4 text-lime py-20">
+		<section className="px-6 bg-primary2 text-lime py-20">
 			<div className="max-w-desktop mx-auto text-center">
 				<h3 className="mb-5 text-xl">Check Out Our</h3>
 				<h2 className="mb-5 text-2xl lg:text-32 font-medium leading-10">Patient Testimonial</h2>
@@ -19,7 +19,7 @@ export default function Review() {
 					<span className="leading-6">5 Average Rating</span>
 				</div>
 
-				<Link to="/review" className="bg-dark3 py-4 px-8 text-white leading-6 inline-block">
+				<Link to="/review" className="bg-primary-btn py-4 px-8 text-white leading-6 inline-block">
 					All Reviews
 				</Link>
 			</div>

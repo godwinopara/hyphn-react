@@ -22,6 +22,10 @@ module.exports = {
 			},
 
 			colors: {
+				primary: "#997755",
+				primary2: "#997755",
+				"primary-btn": "#F8976A",
+				secondary: "#99775566",
 				"green-200": "#D6E3D6",
 				"green-300": "#ACC7AE",
 				"green-400": "#83AB85",
@@ -39,7 +43,10 @@ module.exports = {
 				dark2: "#b3b3b3",
 				dark3: "#2B2B2A",
 				dark4: "#60605F",
-				dark5: "#2B2B2A80",
+				dark5: "#06570B4D",
+			},
+			fontFamily: {
+				quintessential: ["Quintessential", "serif"],
 			},
 			fontSize: {
 				3.5: "0.875rem",
