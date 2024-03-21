@@ -2,7 +2,7 @@ import SharedCard from "../shared/SharedCard";
 
 export default function MentalHealthFirstCard() {
 	return (
-		<SharedCard title="ESSENTIALS OF MENTAL HEALTH" dark>
+		<SharedCard title="ESSENTIALS OF MENTAL HEALTH">
 			<p>
 				Mental health is a fundamental aspect of overall well-being, encompassing emotional,
 				psychological, and social dimensions. It plays a pivotal role in shaping thoughts, feelings,
