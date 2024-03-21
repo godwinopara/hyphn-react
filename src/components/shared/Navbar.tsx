@@ -110,7 +110,7 @@ export default function Navbar() {
 									</Link>
 
 									{link?.sublink && (
-										<ul className="absolute pt-6 top-5 left-0 bg-white w-[300px] hidden group-hover:block">
+										<ul className="absolute shadow-md pt-6 top-5 left-0 bg-white w-[300px] hidden group-hover:block">
 											{link.sublink.map((sub, id) => {
 												return (
 													<li
@@ -134,7 +134,7 @@ export default function Navbar() {
 			</nav>
 
 			{/* ========== Mobile Nav ================= */}
-			<nav>
+			<nav className="bg-white">
 				<div className="flex justify-between items-center px-8 py-4 bg-primary xl:hidden">
 					<div className="flex items-center gap-2">
 						<img src={searchWhite} alt="search icon" />
