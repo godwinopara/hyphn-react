@@ -5,24 +5,25 @@ import searchWhite from "../../images/search-white.svg";
 import hamburger from "../../images/hamburger.svg";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-// import arrow from "../../images/chevron-right.svg";
+import arrow from "../../images/chevron-right.svg";
 
 export default function Navbar() {
 	const [showNav, setShowNav] = useState(false);
 
 	const navLinks = [
 		{
-			url: "/womens-health",
-			text: "WOMEN'S HEALTH",
+			url: "#",
+			text: "SERVICES",
 			sublink: [
-				// { url: "/aesthetics", text: "Aesthetics" },
-				// { url: "/", text: "Mental Health" },
-				// { url: "/", text: "Mental Weight Loss" },
+				{ url: "/womens-health", text: "Women's Health" },
+				{ url: "/aesthetics", text: "Aesthetics" },
+				{ url: "/mental-health", text: "Mental Health" },
+				{ url: "/mental-weight-loss", text: "Mental Weight Loss" },
 			],
 		},
 		{
 			url: "/aesthetics",
-			text: "AESTHETICS",
+			text: "ABOUT",
 			sublink: [
 				// { url: "/", text: "Body" },
 				// { url: "/", text: "Face And Skin" },
@@ -30,7 +31,7 @@ export default function Navbar() {
 		},
 		{
 			url: "/mental-health",
-			text: "MENTAL HEALTH",
+			text: "REVIEWS",
 			sublink: [
 				// { url: "/", text: "Psychiatric Medication Management" },
 				// { url: "/", text: "Telepsychiatry" },
@@ -41,8 +42,8 @@ export default function Navbar() {
 			],
 		},
 		{
-			url: "/mental-weight-loss",
-			text: "MENTAL WEIGHT LOSS",
+			url: "#",
+			text: "PROVIDERS",
 			sublink: [
 				// { url: "/", text: "Physician Supervision" },
 				// { url: "/", text: "Prescription Medication" },
@@ -52,17 +53,17 @@ export default function Navbar() {
 			],
 		},
 		// { url: "/patients", text: "PATIENT RESULTS" },
-		{
-			url: "/our-team",
-			text: "OUR CENTER & TEAM",
-			// sublink: [
-			// 	{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },
-			// 	{ url: "/", text: "Reword" },
-			// 	{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
-			// ],
-		},
-		{ url: "/dr-loliya", text: "DR. LOLIYA" },
-		{ url: "/dr-ken", text: "DR. KEN" },
+		// {
+		// 	url: "/our-team",
+		// 	text: "OUR CENTER & TEAM",
+		// 	// sublink: [
+		// 	// 	{ url: "/dr-loliya", text: "Dr. Loliya Idoniboye, DO, MPH " },
+		// 	// 	{ url: "/", text: "Reword" },
+		// 	// 	{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
+		// 	// ],
+		// },
+		{ url: "/dr-loliya", text: "BOOK WITH DR. LOLIYA IDONIBOYE" },
+		{ url: "/dr-ken", text: "DR. KENNETH NWOGU" },
 
 		// {
 		// 	url: "/patients",
@@ -108,7 +109,7 @@ export default function Navbar() {
 										{link.text}
 									</Link>
 
-									{/* {link?.sublink && (
+									{link?.sublink && (
 										<ul className="absolute pt-6 top-5 left-0 bg-white w-[300px] hidden group-hover:block">
 											{link.sublink.map((sub, id) => {
 												return (
@@ -124,7 +125,7 @@ export default function Navbar() {
 												);
 											})}
 										</ul>
-									)} */}
+									)}
 								</li>
 							</Fragment>
 						);
