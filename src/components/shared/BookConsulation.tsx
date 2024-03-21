@@ -2,8 +2,8 @@ import React from "react";
 
 export default function BookConsulation() {
 	return (
-		<section className="flex justify-center text-center py-14 px-6 xl:px-0">
-			<div className="bg-gray1 py-9 px-6 md:px-24 rounded-lg">
+		<section className="flex justify-center text-center py-14 px-6 xl:px-0 bg-secondary2">
+			<div className="bg-white py-9 px-6 md:px-24 rounded-lg">
 				<h2 className="text-xl font-bold md:text-3xl xl:text-32 xl:font-medium leading-10 mb-6">
 					Book Appointment with DR. LOLIYA
 				</h2>

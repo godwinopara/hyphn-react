@@ -2,7 +2,7 @@ import Card2 from "../shared/SharedCard";
 
 export default function AestheticsFirstCard() {
 	return (
-		<Card2 title="ASTHETICS" dark>
+		<Card2 title="ASTHETICS">
 			<p>
 				In the realm of modern aesthetics, the pursuit of beauty has taken a fascinating turn — one
 				toward all-natural everything. Natural-looking results by using organically-rooted

@@ -13,6 +13,13 @@ export default function Asthetics() {
 	return (
 		<MainLayout>
 			<HeroCard heading="Asthetics" img={heroImg} />
+			<section className="bg-primary py-10 text-white px-6 xl:px-0">
+				<div className="max-w-desktop grid place-items-center mx-auto">
+					<div className="text-center">
+						<h2 className="text-xl md:text-32 leading-10 font-medium">ONE ON ONE MEETING</h2>
+					</div>
+				</div>
+			</section>
 			<AestheticsFirstCard />
 			<Card heading="EMBODY YOUR AUTHENTICITY" img={img}>
 				<p>
@@ -31,7 +38,14 @@ export default function Asthetics() {
 					Book Consultation
 				</a>
 			</Card>
-			<Card2 title="IMAGINE YOUR IDEAL LOOK" dark>
+			<section className="bg-primary py-10 text-white px-6 xl:px-0">
+				<div className="max-w-desktop grid place-items-center mx-auto">
+					<div className="text-center">
+						<h2 className="text-xl md:text-32 leading-10 font-medium">ONE ON ONE MEETING</h2>
+					</div>
+				</div>
+			</section>
+			<Card2 title="IMAGINE YOUR IDEAL LOOK">
 				<p>
 					In the realm of modern aesthetics, the pursuit of beauty has taken a fascinating turn —
 					one toward all-natural everything. Natural-looking results by using organically-rooted
