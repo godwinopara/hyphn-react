@@ -26,6 +26,7 @@ module.exports = {
 				primary2: "#997755",
 				"primary-btn": "#F8976A",
 				secondary: "#99775566",
+				secondary2: "#FFF5E9",
 				"green-200": "#D6E3D6",
 				"green-300": "#ACC7AE",
 				"green-400": "#83AB85",

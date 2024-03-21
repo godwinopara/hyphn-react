@@ -1,18 +1,20 @@
-// import Card from "../ui/Card";
-// import img from "../../images/img1.png";
 import building from "../../images/building.png";
+import buildingMobile from "../../images/building-mobile.png";
 import { Link } from "react-router-dom";
 
 export default function HomeFirstCard() {
 	return (
-		<section className="px-6 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-			<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-b-0 lg:border-e-4 border-black">
-				<img src={building} alt="" className="mx-auto" />
+		<section className="px-6 lg:flex items-center max-w-desktop mx-auto py-20">
+			<div className="pb-8 hidden lg:block lg:w-[50%]  border-b-4 lg:border-b-0 ">
+				<img src={building} alt="" className="mx-auto w-[80%]" />
+			</div>
+			<div className="pb-8 lg:hidden  border-b-2 lg:border-b-0 ">
+				<img src={buildingMobile} alt="" className="mx-auto" />
 			</div>
 
-			<div className="lg:w-[55%] lg:ml-5 pt-8">
-				<h2 className="font-medium text-xl leading-8 mb-1">Welcome To</h2>
-				<h3 className="text-2xl  lg:text-3xl leading-10 font-medium mb-1">
+			<div className="lg:w-[60%] lg:pl-10 py-6  lg:border-s-4 border-black">
+				<h2 className="font-medium text-xl leading-8 mb-4">Welcome To</h2>
+				<h3 className="text-2xl font-bold leading-8  lg:text-3xl lg:leading-10 lg:font-medium mb-4">
 					Integrative Wellness in Columbus Ohio
 				</h3>
 				<p className="mb-8 lg:mb-3">

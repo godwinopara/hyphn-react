@@ -84,7 +84,7 @@ export default function Navbar() {
 		<header>
 			{/* =========== Logo Nav ============= */}
 
-			<nav className="lg:flex lg:gap-[122px] py-3.5">
+			<nav className="lg:flex lg:gap-[122px] py-3.5 ">
 				<Link to="/" className="flex justify-center xl:justify-end xl:w-[60%]">
 					<img src={logo} alt="logo" className="w-[40%]" />
 				</Link>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
 			{/* ================== Desktop Nav =========== */}
 
-			<nav className="hidden xl:block border-t-[1px] border-dark3 bg-secondary">
+			<nav className="hidden xl:block border-t-[1px] border-dark3">
 				<ul className="flex justify-center items-center gap-4 py-5">
 					{navLinks.map((link, id) => {
 						return (
@@ -134,7 +134,7 @@ export default function Navbar() {
 
 			{/* ========== Mobile Nav ================= */}
 			<nav>
-				<div className="flex justify-between items-center px-8 py-4 bg-dark4 xl:hidden">
+				<div className="flex justify-between items-center px-8 py-4 bg-primary xl:hidden">
 					<div className="flex items-center gap-2">
 						<img src={searchWhite} alt="search icon" />
 						<div className="flex items-center gap-2">

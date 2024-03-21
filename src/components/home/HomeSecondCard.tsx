@@ -11,7 +11,10 @@ export default function HomeSecondCard() {
 						Discover What We Can Do For You
 					</h3>
 					<div className="flex justify-center items-center">
-						<Link to="/services" className="bg-dark3 py-4 px-8 text-white leading-6 inline-block">
+						<Link
+							to="/services"
+							className="bg-primary-btn py-4 px-8 text-white leading-6 inline-block"
+						>
 							View Results
 						</Link>
 					</div>

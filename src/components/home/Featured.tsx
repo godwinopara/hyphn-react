@@ -9,7 +9,9 @@ export default function Featured() {
 		<section className="max-w-desktop mx-auto py-20 px-6">
 			<div className="text-center mb-16">
 				<h3 className="text-xl leading-8 mb-6 font-medium">Our Featured</h3>
-				<h2 className="text-32 leading-10 mb-6 font-medium">Technology and Treatments</h2>
+				<h2 className="text-2xl lg:text-32 font-bold leading-8 lg:leading-10 mb-6 lg:font-medium">
+					Technology and Treatments
+				</h2>
 				<p>
 					At Integrative Wellness, we provide personalized services for mental health, weight loss,
 					and aesthetic care. We also proudly feature Alma Accent Prime technology, which utilizes a
@@ -19,7 +21,7 @@ export default function Featured() {
 			</div>
 			<div className="lg:grid lg:grid-cols-2 gap-8 mb-16">
 				<div>
-					<div className="relative border">
+					<div className="relative">
 						<img src={img1} alt="" className="" />
 						<div
 							className="absolute
@@ -48,7 +50,7 @@ export default function Featured() {
 					</div>
 				</div>
 				<div className="mt-16">
-					<div className="relative border">
+					<div className="relative ">
 						<img src={img4} alt="" />
 						<div className="absolute inset-0 bg-dark5 flex items-center px-5">
 							<p className="text-lime text-2xl leading-10">Aesthetics Treatments</p>

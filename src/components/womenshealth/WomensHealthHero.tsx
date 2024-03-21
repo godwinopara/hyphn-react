@@ -1,4 +1,4 @@
-import heroImg from "../../images/women-health-hero.png";
+import heroImg from "../../images/weight-loss.png";
 
 export default function WomensHealthHero() {
 	return (

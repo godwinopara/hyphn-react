@@ -8,14 +8,16 @@ export default function HomeThirdCard() {
 	return (
 		<section className="px-6">
 			<div className="lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-				<div className="pb-8 lg:w-[45%] border-b-4 lg:border-b-0 lg:border-e-4 border-black pr-11">
+				<div className="pb-8 hidden lg:block lg:w-[45%] border-b-4 lg:border-b-0 lg:border-e-4 border-black pr-11">
 					<img src={loliya} alt="" className="mx-auto hidden lg:block" />
-					<img src={loliya1} alt="" className="mx-auto  lg:hidden" />
+				</div>
+				<div className="lg:hidden border-b-2 pb-10">
+					<img src={loliya1} alt="" className="mx-auto" />
 				</div>
 
 				<div className="pt-10 lg:w-[55%] lg:ml-5">
 					<h2 className="font-medium text-xl leading-8 mb-1">Meet</h2>
-					<h3 className="text-xl lg:text-3xl leading-10 font-medium mb-4">
+					<h3 className="text-xl font-bold lg:text-3xl leading-10 lg:font-medium mb-4">
 						Dr. Loliya Idoniboye, D.O., MPH
 					</h3>
 					<p className="mb-5">
@@ -32,15 +34,17 @@ export default function HomeThirdCard() {
 				</div>
 			</div>
 
-			<div className="px-6 lg:px-0 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
-				<div className="pb-8 lg:w-[45%]  border-b-4 lg:border-b-0 lg:border-e-4 border-black pr-11">
+			<div className="lg:px-0 lg:flex lg:gap-x-8 items-center max-w-desktop mx-auto py-20">
+				<div className="pb-8 hidden lg:block lg:w-[45%]   lg:border-b-0 lg:border-e-4 border-black pr-11">
 					<img src={ken} alt="" className="mx-auto hidden lg:block" />
-					<img src={ken1} alt="" className="mx-auto  lg:hidden" />
+				</div>
+				<div className="lg:hidden border-b-2 pb-10">
+					<img src={ken1} alt="" className="mx-auto w-full" />
 				</div>
 
 				<div className="pt-10 lg:w-[55%] lg:ml-5">
 					<h2 className="font-medium text-xl leading-8 mb-1">Meet</h2>
-					<h3 className="text-xl lg:text-3xl leading-10 font-medium mb-4">
+					<h3 className="text-xl font-bold leading-8 lg:text-3xl lg:leading-10 lg:font-medium mb-4">
 						Kenneth Nwogu MSN, APRN, FNP-C, PMHNP-BC
 					</h3>
 					<p className="mb-5">

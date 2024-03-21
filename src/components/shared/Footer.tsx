@@ -82,16 +82,13 @@ export default function Footer() {
 						></textarea>
 
 						<div>
-							<button className="bg-black text-white px-8 py-4" type="submit">
+							<button className="bg-primary-btn text-white px-8 py-4" type="submit">
 								Submit
 							</button>
 						</div>
 					</div>
 				</form>
 				<div className="max-w-desktop mx-auto mt-20 xl:mt-0">
-					<div className="border-b-[1px] border-black mb-10">
-						<img src={logo} alt="" className="mb-6 lg:mb-0 md:w-[60%] lg:w-[60%] mx-auto" />
-					</div>
 					<div className="grid xl:grid-cols-2">
 						<div className="mb-10 xl:mb-0">
 							<h2 className="mb-3 font-medium text-2xl">Contact Information</h2>
