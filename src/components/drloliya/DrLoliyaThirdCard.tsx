@@ -3,18 +3,17 @@ import img1 from "../../images/dr-loliya3.png";
 
 export default function DrLoliyaThirdCard() {
 	return (
-		<Card heading="INTEGRATIVE WELLNESS" img={img1}>
+		<Card img={img1}>
 			<p>
-				She completed her residency at Niagara Falls Memorial in NY, and pursued further
-				specialization through a fellowship in women's health at Cornell Weill/Lincoln Hospital NY,
-				. This comprehensive training equipped her with the skills and knowledge needed to address a
-				wide range of medical concerns, with a particular focus on the unique healthcare needs of
-				women
+				Driven by a desire to make a positive impact on the lives of others, Dr. Idoniboye
+				tirelessly works to guide her patients towards better health outcomes.
 			</p>
 			<br />
 			<p>
-				Dr. Idoniboye's dedication to women's health and obesity medicine stems from her belief in
-				the interconnectedness of the two.
+				Her holistic approach involves not only addressing medical issues but also helping
+				individuals discover their passions and expand their horizons. Through her expertise,
+				empathy, and commitment, Dr. Idoniboye strives to empower her patients to achieve optimal
+				health and lead fulfilling lives.
 			</p>
 		</Card>
 	);

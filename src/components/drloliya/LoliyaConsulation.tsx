@@ -4,8 +4,8 @@ interface LoliyaConsulationProps {
 
 export default function LoliyaConsulation({ openModal }: LoliyaConsulationProps) {
 	return (
-		<section className="flex justify-center text-center py-14 px-6 xl:px-0">
-			<div className="bg-gray1 py-9 px-6 md:px-24 rounded-lg">
+		<section className="flex justify-center text-center py-14 bg-secondary2 px-6 xl:px-0">
+			<div className="bg-white py-9 px-6 md:px-24 rounded-lg">
 				<h2 className="text-xl font-medium md:text-3xl xl:text-32 leading-10 mb-3">
 					Book Appointment with DR. LOLIYA
 				</h2>

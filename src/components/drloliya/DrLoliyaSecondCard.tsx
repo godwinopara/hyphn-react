@@ -3,7 +3,7 @@ import Card from "../ui/Card";
 
 export default function DrLoliyaSecondCard() {
 	return (
-		<Card heading="DR LOLIYA PROFILE" img={img} reverse>
+		<Card img={img} reverse>
 			<p>
 				She firmly believes that addressing women's health issues is integral to promoting overall
 				well-being and fostering healthier life choices, especially in the context of obesity. Her
