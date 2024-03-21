@@ -3,7 +3,14 @@ import Card from "../ui/Card";
 
 export default function DrKenCard1() {
 	return (
-		<Card heading="ABOUT DR KEN" img={img1}>
+		<Card img={img1}>
+			<p className="xl:max-w-3xl mx-auto">
+				I specialize in holistic care, emphasizing integrative mental wellness, addressing
+				functional issues including anxiety, depressive, and mood disorders as well as improving
+				overall health, and lifestyle. I can recommend, prescribe, and monitor medications and
+				psychotherapy. I can meet with clients through telemedicine/telepsychiatry or in person.
+			</p>
+			<br />
 			<p className="xl:max-w-3xl mx-auto">
 				My approach to mental health is interactive, holistic, compassionate, and collaborative. I
 				maximize empathy. I integrate and appreciate cultural and belief systems to treatment as

@@ -62,8 +62,8 @@ export default function Navbar() {
 		// 	// 	{ url: "/ken", text: "Kenneth Nwogu, PMHNP-BC " },
 		// 	// ],
 		// },
-		{ url: "/dr-loliya", text: "BOOK WITH DR. LOLIYA IDONIBOYE" },
 		{ url: "/dr-ken", text: "DR. KENNETH NWOGU" },
+		{ url: "/dr-loliya", text: "BOOK WITH DR. LOLIYA IDONIBOYE" },
 
 		// {
 		// 	url: "/patients",
