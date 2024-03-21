@@ -9,7 +9,7 @@ import LoliyaModal from "../components/drloliya/LoliyaModal";
 import MainLayout from "../layouts/MainLayout";
 import LoliyaConsulation from "../components/drloliya/LoliyaConsulation";
 import AboutCard2 from "../components/drloliya/AboutCard2";
-import arrow from "../images/arrow-down.svg";
+// import arrow from "../images/arrow-down.svg";
 import Partners from "../components/shared/Partners";
 
 export default function DrLoliyaProfile() {

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import img from "../../images/img2.png";
-import Card from "../ui/Card";
 
 export default function HomeSecondCard() {
 	return (

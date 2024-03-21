@@ -6,15 +6,15 @@ import drLoliyaImg from "../images/dr-loliya1.png";
 import drKenImg from "../images/ken1.png";
 import teamImg from "../images/img4.png";
 import groupImg from "../images/team.png";
-import KenConsulation from "../components/drken/KenConsulation";
-import LoliyaConsulation from "../components/drloliya/LoliyaConsulation";
-import { useState } from "react";
+// import KenConsulation from "../components/drken/KenConsulation";
+// import LoliyaConsulation from "../components/drloliya/LoliyaConsulation";
+// import { useState } from "react";
 
 export default function OurTeam() {
-	const [modal, setModal] = useState(false);
-	const openModal = () => {
-		setModal(true);
-	};
+	// const [modal, setModal] = useState(false);
+	// const openModal = () => {
+	// 	setModal(true);
+	// };
 
 	return (
 		<MainLayout>
@@ -72,8 +72,8 @@ export default function OurTeam() {
 					</Card>
 				</div>
 			</div>
-			<KenConsulation openModal={openModal} />
-			<LoliyaConsulation openModal={openModal} />
+			{/* <KenConsulation openModal={openModal} />
+			<LoliyaConsulation openModal={openModal} /> */}
 		</MainLayout>
 	);
 }

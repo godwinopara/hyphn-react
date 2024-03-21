@@ -1,4 +1,4 @@
-import logo from "../../images/logo-Kachi.png";
+// import logo from "../../images/logo-Kachi.png";
 import twitter from "../../images/twitter.svg";
 import facebook from "../../images/facebook.svg";
 import instagram from "../../images/instagram.svg";
