@@ -13,19 +13,22 @@ import AboutCard2 from "../components/drloliya/AboutCard2";
 import Partners from "../components/shared/Partners";
 
 export default function DrLoliyaProfile() {
-	const [toggleModal, setToggleModal] = useState(false);
+  const [toggleModal, setToggleModal] = useState(false);
 
-	return (
-		<MainLayout>
-			<Hero />
-			<AboutCard />
-			<Card1 />
-			<Card2 />
-			<Card3 />
-			<AboutCard2 />
-			<LoliyaConsulation openModal={() => setToggleModal(true)} />
-			<LoliyaModal closeModal={() => setToggleModal(false)} toggleModal={toggleModal} />
-			<Partners />
-		</MainLayout>
-	);
+  return (
+    <MainLayout>
+      <Hero />
+      <AboutCard />
+      <Card1 />
+      <Card2 />
+      <Card3 />
+      <AboutCard2 />
+      <LoliyaConsulation openModal={() => setToggleModal(true)} />
+      <LoliyaModal
+        closeModal={() => setToggleModal(false)}
+        toggleModal={toggleModal}
+      />
+      <Partners />
+    </MainLayout>
+  );
 }
