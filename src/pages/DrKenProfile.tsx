@@ -10,17 +10,20 @@ import KenModal from "../components/drken/KenModal";
 import Partners from "../components/shared/Partners";
 
 export default function DrKenProfile() {
-	const [toggleModal, setToggleModal] = useState(false);
-	return (
-		<MainLayout>
-			<Hero />
-			<AboutCard />
-			<DrKenCard1 />
-			{/* <AboutCard2 /> */}
+  const [toggleModal, setToggleModal] = useState(false);
+  return (
+    <MainLayout>
+      <Hero />
+      <AboutCard />
+      <DrKenCard1 />
+      {/* <AboutCard2 /> */}
 
-			<KenConsulation openModal={() => setToggleModal(true)} />
-			<KenModal closeModal={() => setToggleModal(false)} toggleModal={toggleModal} />
-			<Partners />
-		</MainLayout>
-	);
+      <KenConsulation openModal={() => setToggleModal(true)} />
+      <KenModal
+        closeModal={() => setToggleModal(false)}
+        toggleModal={toggleModal}
+      />
+      <Partners />
+    </MainLayout>
+  );
 }
