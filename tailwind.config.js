@@ -12,6 +12,7 @@ module.exports = {
         img: "url('../src/images/weight-loss.png')",
         img5: "url('../src/images/img5.jpeg')",
         accentp: "url('../src/images/accentp.png')",
+        accentC: "url('../src/images/contour.png')",
         contactBg: "url('../src/images/contact-bg.svg')",
       },
 

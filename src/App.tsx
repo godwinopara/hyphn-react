@@ -12,6 +12,7 @@ const MentalWeightLoss = lazy(() => import("./pages/MentalWeightLoss"));
 const OurTeam = lazy(() => import("./pages/OurTeam"));
 const PatientsResult = lazy(() => import("./pages/PatientsResult"));
 const AcccentPrime = lazy(() => import("./pages/AccentPrime"));
+const AccentPrimeContouring = lazy(() => import("./pages/AccentPrimeContouring"));
 
 const router = createBrowserRouter([
 	{
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
 	{
 		path: "/accent-prime",
 		element: <AcccentPrime />,
+	},
+	{
+		path: "/accent-prime-contouring",
+		element: <AccentPrimeContouring />,
 	},
 ]);
 
