@@ -11,7 +11,6 @@ import { Treatment } from "../components/AccentPrime/Treatment";
 import { How } from "../components/AccentPrime/How";
 import { Question } from "../components/AccentPrime/Question";
 import { SubQuestions } from "../components/AccentPrime/SubQuestions";
-import { Sponsors } from "../components/AccentPrime/Sponsors";
 import Partners from "../components/shared/Partners";
 
 type Props = {};
