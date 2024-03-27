@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loader from "./images/loader.svg";
+import LipFiller from "./pages/LipFiller";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
 	{
 		path: "/accent-prime-contouring",
 		element: <AccentPrimeContouring />,
+	},
+	{
+		path: "/lip-filler",
+		element: <LipFiller />,
 	},
 ]);
 
