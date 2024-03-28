@@ -14,6 +14,8 @@ module.exports = {
         accentp: "url('../src/images/accentp.png')",
         accentC: "url('../src/images/contour.png')",
         lipfiller: "url('../src/images/lipfillerHero.png')",
+        dermalfiller: "url('../src/images/dermalhero.png')",
+        dermal: "url('../src/images/dermal1.png')",
         contactBg: "url('../src/images/contact-bg.svg')",
       },
 
