@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loader from "./images/loader.svg";
+import { PyschatricMedication } from "./pages/PyschatricMedication";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
   {
     path: "/dermal-filler",
     element: <DermalFiller />,
+  },
+  {
+    path: "/pyschatric-medication-management",
+    element: <PyschatricMedication />,
   },
 ]);
 
