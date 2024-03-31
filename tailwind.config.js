@@ -13,6 +13,7 @@ module.exports = {
 				accentp: "url('../src/images/accentp.png')",
 				accentC: "url('../src/images/contour.png')",
 				lipfiller: "url('../src/images/lipfillerHero.png')",
+				medical: "url('../src/images/medicalhero.png')",
 				contactBg: "url('../src/images/contact-bg.svg')",
 			},
 
