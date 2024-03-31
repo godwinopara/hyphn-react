@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loader from "./images/loader.svg";
 import { PyschatricMedication } from "./pages/PyschatricMedication";
+import MedicalWeightLoss from "./pages/MedicalWeightLoss";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
   {
     path: "/mental-weight-loss",
     element: <MentalWeightLoss />,
+  },
+  {
+    path: "/medical-weight-loss",
+    element: <MedicalWeightLoss />,
   },
   {
     path: "/our-team",
