@@ -8,14 +8,14 @@ import Description from "../components/mentalweightloss/Description";
 // import WeightLossForm from "../components/mentalweightloss/WeightLossForm";
 
 export default function MentalWeightLoss() {
-	return (
-		<MainLayout>
-			<HeroCard heading="Weight Loss" img={heroImg} />
-			<Card />
-			<Description />
-			<MentalWeightRecognition />
-			{/* <WeightLossForm /> */}
-			<Partners />
-		</MainLayout>
-	);
+  return (
+    <MainLayout>
+      <HeroCard heading="Weight Loss" img={heroImg} />
+      <Card />
+      <Description />
+      <MentalWeightRecognition />
+      {/* <WeightLossForm /> */}
+      <Partners />
+    </MainLayout>
+  );
 }

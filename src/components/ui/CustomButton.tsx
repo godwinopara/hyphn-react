@@ -18,7 +18,7 @@ const CustomButton = ({
   return (
     <button
       type={type}
-      className={`w-fit  px-8 flex items-center justify-center h-14 bg-dark3 text-white text-base`}
+      className={`w-fit  px-8 flex items-center justify-center h-14 bg-dark3 text-white text-base ${className}`}
       onClick={onClick}
       disabled={isPending || disabled}
       {...rest}
