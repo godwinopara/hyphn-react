@@ -15,6 +15,8 @@ module.exports = {
 				lipfiller: "url('../src/images/lipfillerHero.png')",
 				medical: "url('../src/images/medicalhero.png')",
 				contactBg: "url('../src/images/contact-bg.svg')",
+				pyscha:"url('../src/images/psychheros.png')",
+				dermalfiller:"url('../src/images/dermalheros.png')"
 			},
 
 			boxShadow: {
