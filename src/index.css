@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer {
+	html {
+		overflow-x: hidden;
+	}
 	body {
 		font-family: "Poppins", sans-serif;
 		@apply text-gray2;
@@ -28,5 +31,54 @@
 		.home__hero {
 			background-size: 70%;
 		}
+	}
+
+	.aesthetic-sub,
+	.womenhealth-sub,
+	.mental-health-sub,
+	.services-sub,
+	.weight-loss-sub,
+	.integrative-medicine-sub {
+		display: none;
+	}
+
+	.aesthetic:hover .aesthetic-sub,
+	.mental-health:hover .mental-health-sub,
+	.womenhealth:hover .womenhealth-sub,
+	.services:hover .services-sub,
+	.weight-loss:hover .weight-loss-sub,
+	.integrative-medicine:hover .integrative-medicine-sub {
+		display: block;
+	}
+	/* .mental-health:hover .mental-health-sub {
+		display: block;
+	} */
+
+	.body-sub {
+		display: none;
+	}
+
+	.body-sculpt {
+		display: none;
+	}
+
+	.face:hover .face-sub {
+		display: block;
+	}
+
+	.face-sub {
+		display: none;
+	}
+
+	.filler:hover .filler-sub {
+		display: block;
+	}
+
+	.body-sub:hover .body-sculpt {
+		display: block;
+	}
+
+	.body:hover .body-sub {
+		display: block;
 	}
 }

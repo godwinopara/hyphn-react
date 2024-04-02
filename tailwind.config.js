@@ -71,7 +71,7 @@ module.exports = {
 				18: "4.4375rem",
 			},
 			maxWidth: {
-				desktop: "1139px",
+				desktop: "1200px",
 			},
 			screens: {
 				md: "767px",
