@@ -15,8 +15,8 @@ module.exports = {
 				lipfiller: "url('../src/images/lipfillerHero.png')",
 				medical: "url('../src/images/medicalhero.png')",
 				contactBg: "url('../src/images/contact-bg.svg')",
-				pyscha:"url('../src/images/psychheros.png')",
-				dermalfiller:"url('../src/images/dermalheros.png')"
+				pyscha: "url('../src/images/psychheros.png')",
+				dermalfiller: "url('../src/images/dermalheros.png')",
 			},
 
 			boxShadow: {
@@ -73,7 +73,7 @@ module.exports = {
 				18: "4.4375rem",
 			},
 			maxWidth: {
-				desktop: "1200px",
+				desktop: "1140px",
 			},
 			screens: {
 				md: "767px",
