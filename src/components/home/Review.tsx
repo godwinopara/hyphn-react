@@ -3,7 +3,7 @@ import rating from "../../images/rating.svg";
 
 export default function Review() {
 	return (
-		<section className="px-6 bg-primary2 text-lime py-20">
+		<section className="px-6 bg-primary text-lime py-20">
 			<div className="max-w-desktop mx-auto text-center">
 				<h3 className="mb-5 text-xl">Check Out Our</h3>
 				<h2 className="mb-5 text-2xl lg:text-32 font-medium leading-10">Patient Testimonial</h2>
