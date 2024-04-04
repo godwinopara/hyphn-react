@@ -2,7 +2,6 @@ import { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loader from "./images/loader.svg";
 import { PyschatricMedication } from "./pages/PyschatricMedication";
-import MedicalWeightLoss from "./pages/MedicalWeightLoss";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -19,6 +18,8 @@ const AccentPrimeContouring = lazy(
 );
 const LipFiller = lazy(() => import("./pages/LipFiller"));
 const DermalFiller = lazy(() => import("./pages/DermalFiller"));
+const MedicalWeightLoss = lazy(() => import("./pages/MedicalWeightLoss"));
+const Financial = lazy(() => import("./pages/Financial"));
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
   {
     path: "/pyschatric-medication-management",
     element: <PyschatricMedication />,
+  },
+  {
+    path: "/financial",
+    element: <Financial />,
   },
 ]);
 
