@@ -38,7 +38,8 @@
 	.mental-health-sub,
 	.services-sub,
 	.weight-loss-sub,
-	.integrative-medicine-sub {
+	.integrative-medicine-sub,
+	.provider-sub {
 		display: none;
 	}
 
@@ -47,7 +48,8 @@
 	.womenhealth:hover .womenhealth-sub,
 	.services:hover .services-sub,
 	.weight-loss:hover .weight-loss-sub,
-	.integrative-medicine:hover .integrative-medicine-sub {
+	.integrative-medicine:hover .integrative-medicine-sub,
+	.provider:hover .provider-sub {
 		display: block;
 	}
 	/* .mental-health:hover .mental-health-sub {
