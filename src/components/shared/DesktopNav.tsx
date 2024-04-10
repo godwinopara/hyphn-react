@@ -19,15 +19,15 @@ export default function DesktopNav() {
 						</div>
 					</div>
 				</div>
-				<ul className="flex  justify-center items-center gap-y-4 gap-x-16 py-6">
+				<ul className="flex  justify-center items-center gap-y-4 gap-x-16 py-6 relative z-[1000px]">
 					<li className="services text-dark3 relative cursor-pointer hover:text-primary">
 						<div>SERVICES</div>
 
-						<ul className="services-sub absolute top-6 bg-white shadow-lg pt-8 pb-[5px] z-10 w-[300px] rounded-md">
+						<ul className=" services-sub absolute top-6 bg-white shadow-lg pt-8 pb-[5px] z-10 w-[300px] rounded-md">
 							<li className="womenhealth text-dark3 px-5 relative pb-3 flex items-center justify-between cursor-pointer border-b-[1px] mb-2 hover:text-primary">
 								Women's Health
 								<img src={arrow} alt=" arrow" />
-								<ul className="womenhealth-sub absolute -top-6  left-[100%] bg-white pt-8 pb-[5px] z-10 w-[300px]">
+								<ul className="womenhealth-sub absolute -top-6  left-[100.5%] bg-white pt-8 pb-[5px] z-10 w-[300px]">
 									<li className="text-dark3 cursor-pointer  mb-2 hover:text-primary">
 										<Link
 											to="/womens-health"
@@ -113,7 +113,7 @@ export default function DesktopNav() {
 							<li className="mental-health text-dark3   px-5 pb-3   cursor-pointer flex items-center justify-between  border-b-[1px] mb-2  hover:text-primary">
 								<Link to="/mental-health">Mental Health</Link>
 								<img src={arrow} alt=" arrow" />
-								<ul className="mental-health-sub absolute top-0 left-[100%] bg-white pt-8 pb-[5px] z-10 w-[350px]">
+								<ul className="mental-health-sub absolute top-0 left-[100%] bg-white pt-8 pb-[5px] z-10 w-[350px] h-auto">
 									<li className="text-dark3 cursor-pointer  mb-2 hover:text-primary">
 										<Link
 											className="px-5 pb-2 flex items-center justify-between "
@@ -147,7 +147,7 @@ export default function DesktopNav() {
 											{/* <img src={arrow} alt=" arrow" /> */}
 										</Link>
 									</li>
-									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
+									<li className="text-dark3  cursor-pointer  pb-5  hover:text-primary">
 										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
 											Psychotherapy
 											{/* <img src={arrow} alt=" arrow" /> */}
@@ -225,17 +225,6 @@ export default function DesktopNav() {
 					</li>
 					<li className="text-dark3 cursor-pointer hover:text-primary">ABOUT</li>
 					<li className="text-dark3 cursor-pointer hover:text-primary">REVIEWS</li>
-					{/* <li className="provider relative text-dark3 cursor-pointer hover:text-primary">
-						PROVIDERS
-						<ul className="provider-sub absolute top-0 left-0 w-[300px]">
-							<li className=" text-dark3 cursor-pointer hover:text-primary">
-								<Link to="/dr-ken"></Link>
-							</li>
-							<li className="text-dark3 cursor-pointer hover:text-primary">
-								<Link to="/dr-loliya">BOOK WITH DR LOLIYA IDONIBOYE</Link>
-							</li>
-						</ul>
-					</li> */}
 					<li className="services text-dark3 relative cursor-pointer hover:text-primary">
 						<div>PROVIDERS</div>
 
