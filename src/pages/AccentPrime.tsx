@@ -16,36 +16,36 @@ import Partners from "../components/shared/Partners";
 type Props = {};
 
 const AccentPrime = (props: Props) => {
-  return (
-    <MainLayout>
-      <AccentPrimeHero />
-      <AccentPrimeFaceCard />
-      <AccentPrimeCard
-        heading="Integrative wellness face & body contouring"
-        desc="Treatments effectively remove stubborn fat deposits, reduce the
+	return (
+		<MainLayout>
+			<AccentPrimeHero />
+			<AccentPrimeFaceCard />
+			<AccentPrimeCard
+				heading="Integrative wellness face & body contouring"
+				desc="Treatments effectively remove stubborn fat deposits, reduce the
             appearance of cellulite, tighten loose skin and visibly improve the
             shape and contours of the face and body.A combination of ultrasound
             and RF technologies achieves superior results, giving you a
             naturally sculpted appearance without the pain and downtime of more
             invasive procedures. Look thinner, feel better and reveal the beauty
             of your natural contours."
-        img={ultrasound}
-      />
-      <Cellulite />
-      <AccentPrimeCard
-        heading="Skin rejuvenation"
-        desc="As we age, the tone and texture of our skin changes. Accent Prime uses microplasma RF technology to smooth out and balance the skin- improving overall skin tone and texture, improving the appearance of stretch marks and reducing superficial pigmentation, while helping to bolster the skin against future aging."
-        img={skin}
-        reverse
-      />
-      <Benefits />
-      <Treatment />
-      <How />
-      <Question />
-      <SubQuestions />
-      <Partners />
-    </MainLayout>
-  );
+				img={ultrasound}
+			/>
+			<Cellulite />
+			<AccentPrimeCard
+				heading="Skin rejuvenation"
+				desc="As we age, the tone and texture of our skin changes. Accent Prime uses microplasma RF technology to smooth out and balance the skin- improving overall skin tone and texture, improving the appearance of stretch marks and reducing superficial pigmentation, while helping to bolster the skin against future aging."
+				img={skin}
+				reverse
+			/>
+			<Benefits />
+			<Treatment />
+			<How />
+			<Question />
+			<SubQuestions />
+			<Partners />
+		</MainLayout>
+	);
 };
 
 export default AccentPrime;
