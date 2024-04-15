@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 export const LipfillerHero = (props: Props) => {
-  return (
-    <section className="min-h-[80vh] relative bg-lipfiller bg-cover bg-no-repeat "></section>
-  )
-}
+	return (
+		<section className="min-h-[25vh] relative bg-lipfiller bg-contain xl:bg-cover bg-center bg-no-repeat"></section>
+	);
+};

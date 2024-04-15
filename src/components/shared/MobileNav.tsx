@@ -1,6 +1,6 @@
 import { GoChevronRight } from "react-icons/go";
 import phoneWhite from "../../images/phone-white.svg";
-import searchWhite from "../../images/search-white.svg";
+// import searchWhite from "../../images/search-white.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -133,7 +133,9 @@ export default function MobileNav() {
 														</Link>
 													</li>
 													<li className="flex items-center justify-between py-3  cursor-pointer">
-														Accent Prime Face Body Contouring
+														<Link to="/accent-prime-contouring">
+															Accent Prime Face Body Contouring
+														</Link>
 													</li>
 												</ul>
 											)}
