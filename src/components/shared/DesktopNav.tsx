@@ -156,40 +156,7 @@ export default function DesktopNav() {
 								</ul>
 							</li>
 							<li className="weight-loss text-dark3   px-5 pb-3   cursor-pointer flex items-center justify-between  border-b-[1px] mb-2  hover:text-primary">
-								Mental Weight Loss
-								<img src={arrow} alt=" arrow" />
-								<ul className="weight-loss-sub absolute top-0 left-[100%] bg-white pt-8 pb-[5px] z-10 w-[350px]">
-									<li className="text-dark3 cursor-pointer  mb-2 hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
-											Physician Supervision
-											{/* <img src={arrow} alt=" arrow" /> */}
-										</Link>
-									</li>
-									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
-											Prescription Medication
-											{/* <img src={arrow} alt=" arrow" /> */}
-										</Link>
-									</li>
-									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
-											GLP-1 Medications
-											{/* <img src={arrow} alt=" arrow" /> */}
-										</Link>
-									</li>
-									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
-											Lipotropic Fat Burners
-											{/* <img src={arrow} alt=" arrow" /> */}
-										</Link>
-									</li>
-									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
-											B-12 Injections
-											{/* <img src={arrow} alt=" arrow" /> */}
-										</Link>
-									</li>
-								</ul>
+								<Link to="/medical-weight-loss">Medical Weight Loss</Link>
 							</li>
 							<li className="integrative-medicine text-dark3   px-5 pb-3   cursor-pointer flex items-center justify-between hover:text-primary">
 								Integrative Medicine

@@ -49,7 +49,7 @@ export const ConturingCard = ({ white, title, consult, desc1, desc2, treatment, 
 				<div
 					className={`${consult ? "xl:w-[80%] mx-auto" : "w-full"} flex flex-col gap-4 text-dark3`}
 				>
-					<h2 className="text-3xl font-medium text-center ">{title}</h2>
+					<h2 className="text-xl font-bold xl:text-3xl xl:font-medium text-center ">{title}</h2>
 					<p className="text-base text-left">{desc1}</p>
 					{desc2 && <p className="text-base text-left">{desc2}</p>}
 					{skin && (

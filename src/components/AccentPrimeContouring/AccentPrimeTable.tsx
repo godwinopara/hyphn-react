@@ -108,56 +108,115 @@ const data = [
 
 type Props = {};
 
+// export const AccentPrimeTable = (props: Props) => {
+// 	return (
+// 		<section className="bg-white py-14 overflow-hidden">
+// 			<div className="xl:w-5/6 mx-auto">
+// 				<table className="w-full">
+// 					<thead className="text-center  px-4">
+// 						<tr className=" px-4 ">
+// 							<th className="pt-7 pb-5 xl:text-xl font-semibold text-[#333] "></th>
+// 							<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
+// 								ACCENT PRIME
+// 							</th>
+// 							<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
+// 								COOLSCULPTING
+// 							</th>
+// 						</tr>
+// 					</thead>
+// 					<tbody>
+// 						{data.map((item, index) => (
+// 							<tr
+// 								key={item.id}
+// 								className={`h-[72px] ${
+// 									index % 2 === 0 ? "bg-secondary2" : "bg-white"
+// 								}  text-sm font-normal text-[#333333] px-4 `}
+// 							>
+// 								<td className="px-4 border w-[33%] xl:max-w-[321px] text-center text-dark3 text-[0.5rem] xl:text-xl font-medium py-5">
+// 									{item.desc}
+// 								</td>
+// 								<td className="py-5 border w-[33%]">
+// 									<div className="flex flex-col  text-center gap-0.5">
+// 										{item.right && !item.wrong && <div className="mx-auto">{item.icon}</div>}
+
+// 										<span className="max-w-[364px] text-[0.5rem] xl:text-base text-dark3">
+// 											{item.accent}
+// 										</span>
+// 									</div>
+// 								</td>
+// 								<td className="py-5 px-4 border w-[33%]">
+// 									<div className="flex flex-col text-center gap-0.5">
+// 										{item.right && item.wrong && <div className="mx-auto">{item.icon}</div>}
+// 										{/* {!item.right && !item.wrong && <div className="mx-auto">{item.not}</div>} */}
+
+// 										<span className="xl:max-w-[364px] text-[0.5rem] xl:text-base text-dark3">
+// 											{item.coolsculpting}
+// 										</span>
+// 									</div>
+// 								</td>
+// 							</tr>
+// 						))}
+// 					</tbody>
+// 				</table>
+// 				<p className="text-base text-center text-dark3">
+// 					The best way to determine which body contouring treatment is right for you is to schedule
+// 					a free consultation with the Wellife Center.
+// 				</p>
+// 			</div>
+// 		</section>
+// 	);
+// };
 export const AccentPrimeTable = (props: Props) => {
 	return (
 		<section className="bg-white py-14 overflow-hidden">
 			<div className="xl:w-5/6 mx-auto">
-				<table className="w-full">
-					<thead className="text-center  px-4">
-						<tr className=" px-4 ">
-							<th className="pt-7 pb-5 xl:text-xl font-semibold text-[#333] "></th>
-							<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
-								ACCENT PRIME
-							</th>
-							<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
-								COOLSCULPTING
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						{data.map((item, index) => (
-							<tr
-								key={item.id}
-								className={`h-[72px] ${
-									index % 2 === 0 ? "bg-secondary2" : "bg-white"
-								}  text-sm font-normal text-[#333333] px-4 `}
-							>
-								<td className="xl:max-w-[321px] text-center text-dark3 text-[0.5rem] xl:text-xl font-medium py-5">
-									{item.desc}
-								</td>
-								<td className="py-5">
-									<div className="flex flex-col  text-center gap-0.5">
-										{item.right && !item.wrong && <div className="mx-auto">{item.icon}</div>}
-
-										<span className="max-w-[364px] text-[0.5rem] xl:text-base text-dark3">
-											{item.accent}
-										</span>
-									</div>
-								</td>
-								<td className="py-5">
-									<div className="flex flex-col text-center gap-0.5">
-										{item.right && item.wrong && <div className="mx-auto">{item.icon}</div>}
-										{/* {!item.right && !item.wrong && <div className="mx-auto">{item.not}</div>} */}
-
-										<span className="xl:max-w-[364px] text-[0.5rem] xl:text-base text-dark3">
-											{item.coolsculpting}
-										</span>
-									</div>
-								</td>
+				<div className="overflow-x-auto">
+					<table className="w-full">
+						<thead className="text-center px-4">
+							<tr className="px-4">
+								<th className="pt-7 pb-5 xl:text-xl font-semibold text-[#333] "></th>
+								<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
+									ACCENT PRIME
+								</th>
+								<th className="pt-7 pb-5 text-sm xl:text-xl font-semibold text-[#333] ">
+									COOLSCULPTING
+								</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							{data.map((item, index) => (
+								<tr
+									key={item.id}
+									className={`h-[72px] ${
+										index % 2 === 0 ? "bg-secondary2" : "bg-white"
+									}  text-sm font-normal text-[#333333] px-4 `}
+								>
+									<td className="px-4 w-[33%] xl:max-w-[321px] text-center text-dark3 text-[0.5rem] xl:text-xl font-medium py-5">
+										{item.desc}
+									</td>
+									<td className="py-5 w-[33%]">
+										<div className="flex flex-col  text-center gap-0.5">
+											{item.right && !item.wrong && <div className="mx-auto">{item.icon}</div>}
+
+											<span className="max-w-[364px] text-[0.5rem] xl:text-base text-dark3 sm:text-sm">
+												{item.accent}
+											</span>
+										</div>
+									</td>
+									<td className="py-5 px-4  w-[33%]">
+										<div className="flex flex-col text-center gap-0.5">
+											{item.right && item.wrong && <div className="mx-auto">{item.icon}</div>}
+
+											<span className="xl:max-w-[364px] text-[0.5rem] xl:text-base text-dark3 sm:text-sm">
+												{item.coolsculpting}
+											</span>
+										</div>
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
 				<p className="text-base text-center text-dark3">
 					The best way to determine which body contouring treatment is right for you is to schedule
 					a free consultation with the Wellife Center.
@@ -166,3 +225,5 @@ export const AccentPrimeTable = (props: Props) => {
 		</section>
 	);
 };
+
+export default AccentPrimeTable;

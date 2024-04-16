@@ -1,15 +1,24 @@
 import React from "react";
+import medicalHero from "../../images/medicalhero.png";
+import medicalHeroMobile from "../../images/medical-weight-loss-mobile.png";
 
 type Props = {};
 
 export const MedicalWeightHero = (props: Props) => {
-  return (
-    <section className="min-h-[80vh] relative bg-medical bg-cover bg-no-repeat flex justify-center items-center  ">
-      <div className="flex justify-end max-w-[650px] ml-72">
-        <h1 className="text-dark3 text-6xl font-medium">
-          Options Medical Weight Loss™ SERVICES
-        </h1>
-      </div>
-    </section>
-  );
+	return (
+		<section>
+			<div className="min-h-[20vh] lg:min-h-[35vh] xl:min-h-[70vh] relative flex justify-end">
+				<div>
+					<img src={medicalHero} alt="" className="hidden lg:block" />
+					<img src={medicalHeroMobile} alt="lg:hidden h-[320px]" />
+				</div>
+				<div className="absolute right-5 lg:right-[24%] xl:right-[22%] top-[30%]">
+					<h1 className="text-dark3 text-2xl lg:text-4xl xl:text-6xl ">
+						Options Medical <br /> Weight Loss™ <br />
+						SERVICES
+					</h1>
+				</div>
+			</div>
+		</section>
+	);
 };

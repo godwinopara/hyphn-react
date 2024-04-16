@@ -11,7 +11,6 @@ export default function MobileNav() {
 	const [womenhealth, setWomenHealth] = useState(false);
 	const [aesthetics, setAesthetics] = useState(false);
 	const [mentalHealth, setMentalHealth] = useState(false);
-	const [mentalWeightLoss, setMentalWeightLoss] = useState(false);
 	const [integrativeMedicine, setIntegrativeMedicine] = useState(false);
 	const [provider, setProvider] = useState(false);
 
@@ -219,37 +218,10 @@ export default function MobileNav() {
 									</li>
 								</ul>
 							)}
-							<li
-								onClick={() => setMentalWeightLoss(!mentalWeightLoss)}
-								className="flex items-center justify-between py-3 cursor-pointer"
-							>
-								Mental Weight Loss
-								<div className="text-2xl">
-									<GoChevronRight />
-								</div>
+							<li className="flex items-center justify-between py-3 cursor-pointer">
+								<Link to="/medical-weight-loss">Medical Weight Loss</Link>
 							</li>
-							{mentalWeightLoss && (
-								<ul className="bg-white w-full px-4">
-									<li className="flex items-center justify-between py-3  cursor-pointer">
-										<Link to="/mental-weight-loss">Mental Weight Loss</Link>
-									</li>
-									<li className="flex items-center justify-between py-3  cursor-pointer">
-										Physician Supervision
-									</li>
-									<li className="flex items-center justify-between py-3 cursor-pointer">
-										Prescription Medication
-									</li>
-									<li className="flex items-center justify-between py-3 cursor-pointer">
-										GLP-1 Medications
-									</li>
-									<li className="flex items-center justify-between py-3 cursor-pointer">
-										Lipotropic Fat Burners
-									</li>
-									<li className="flex items-center justify-between py-3 cursor-pointer">
-										B-12 Injections
-									</li>
-								</ul>
-							)}
+
 							<li
 								onClick={() => setIntegrativeMedicine(!integrativeMedicine)}
 								className="flex items-center justify-between py-3 cursor-pointer"
