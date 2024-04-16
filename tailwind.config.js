@@ -17,6 +17,9 @@ module.exports = {
 				contactBg: "url('../src/images/contact-bg.svg')",
 				pyscha: "url('../src/images/psychheros.png')",
 				dermalfiller: "url('../src/images/dermalheros.png')",
+				dermalHero: "url('/src/images/dermal-hero.png' )",
+				dermal: "url('/src/images/dermal1.png')",
+				dermalMobile: "url('/src/images/damal1-mobile.png')",
 			},
 
 			boxShadow: {

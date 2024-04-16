@@ -1,31 +1,25 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
-
+import React, { ButtonHTMLAttributes, ReactNode } from "react";
 
 type CustomBtnProps = {
-  children: ReactNode;
-  isPending?: boolean;
-  className?: string;
+	children: ReactNode;
+	isPending?: boolean;
+	className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-const CustomButton = ({
-  children,
-  isPending,
-  className,
-  ...rest
-}: CustomBtnProps) => {
-  const { disabled, type, onClick } = rest;
+const CustomButton = ({ children, isPending, className, ...rest }: CustomBtnProps) => {
+	const { disabled, type, onClick } = rest;
 
-  return (
-    <button
-      type={type}
-      className={`w-fit  px-8 flex items-center justify-center h-14 bg-dark3 text-white text-base ${className}`}
-      onClick={onClick}
-      disabled={isPending || disabled}
-      {...rest}
-    >
-     {children}
-    </button>
-  );
+	return (
+		<button
+			type={type}
+			className={`w-fit  px-3 py-2 xl:px-8 flex items-center justify-center xl:h-14 bg-dark3 text-white text-base ${className}`}
+			onClick={onClick}
+			disabled={isPending || disabled}
+			{...rest}
+		>
+			{children}
+		</button>
+	);
 };
 
 export default CustomButton;
