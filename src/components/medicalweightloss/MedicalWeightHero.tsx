@@ -8,8 +8,10 @@ export const MedicalWeightHero = (props: Props) => {
 	return (
 		<section>
 			<div className="min-h-[20vh] lg:min-h-[35vh] xl:min-h-[70vh] relative flex justify-end">
-				<div>
+				<div className="hidden lg:block">
 					<img src={medicalHero} alt="" className="hidden lg:block" />
+				</div>
+				<div className="lg:hidden">
 					<img src={medicalHeroMobile} alt="lg:hidden h-[320px]" />
 				</div>
 				<div className="absolute right-5 lg:right-[24%] xl:right-[22%] top-[30%]">
