@@ -27,7 +27,7 @@ export default function DesktopNav() {
 							<li className="womenhealth text-dark3 px-5 relative pb-3 flex items-center justify-between cursor-pointer border-b-[1px] mb-2 hover:text-primary">
 								Women's Health
 								<img src={arrow} alt=" arrow" />
-								<ul className="womenhealth-sub absolute -top-6  left-[100.5%] bg-white pt-8 pb-[5px] z-10 w-[300px]">
+								<ul className="womenhealth-sub absolute -top-6  left-[100%] bg-white pt-8 pb-[5px] z-10 w-[300px]">
 									<li className="text-dark3 cursor-pointer  mb-2 hover:text-primary">
 										<Link
 											to="/womens-health"
@@ -158,7 +158,7 @@ export default function DesktopNav() {
 							<li className="weight-loss text-dark3   px-5 pb-3   cursor-pointer flex items-center justify-between  border-b-[1px] mb-2  hover:text-primary">
 								<Link to="/medical-weight-loss">Medical Weight Loss</Link>
 							</li>
-							<li className="integrative-medicine text-dark3   px-5 pb-3   cursor-pointer flex items-center justify-between hover:text-primary">
+							<li className="integrative-medicine text-dark3 px-5 pb-3 cursor-pointer flex items-center justify-between hover:text-primary z-50">
 								Integrative Medicine
 								<img src={arrow} alt=" arrow" />
 								<ul className="integrative-medicine-sub absolute top-0 left-[100%] bg-white pt-8 pb-[5px] z-10 w-[350px]">
