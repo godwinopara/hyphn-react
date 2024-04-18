@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loader from "./images/loader.svg";
 import { PyschatricMedication } from "./pages/PyschatricMedication";
 import FaceContouring from "./pages/FaceContouring";
+import Trt from "./pages/Trt";
 
 const Home = lazy(() => import("./pages/Home"));
 const DrKenProfile = lazy(() => import("./pages/DrKenProfile"));
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
 	{
 		path: "/face-contouring",
 		element: <FaceContouring />,
+	},
+	{
+		path: "/trt-replacement",
+		element: <Trt />,
 	},
 ]);
 

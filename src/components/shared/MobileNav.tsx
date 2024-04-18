@@ -243,7 +243,7 @@ export default function MobileNav() {
 										Preimenopausal Treatments
 									</li>
 									<li className="flex items-center justify-between py-3 cursor-pointer">
-										TRT Replacement & Hormone Therapy for Men
+										<Link to="/trt-replacement">TRT Replacement & Hormone Therapy for Men</Link>
 									</li>
 								</ul>
 							)}

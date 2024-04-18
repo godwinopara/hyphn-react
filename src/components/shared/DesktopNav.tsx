@@ -181,7 +181,10 @@ export default function DesktopNav() {
 										</Link>
 									</li>
 									<li className="text-dark3  cursor-pointer  mb-2  hover:text-primary">
-										<Link className="px-5 pb-2 flex items-center justify-between " to="#">
+										<Link
+											className="px-5 pb-2 flex items-center justify-between "
+											to="/trt-replacement"
+										>
 											TRT Replacement & Hormone Therapy for Men
 											{/* <img src={arrow} alt=" arrow" /> */}
 										</Link>
