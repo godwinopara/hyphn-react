@@ -9,7 +9,7 @@ export default function BandACard({ img, title, subtitle, description }: BandACa
 	return (
 		<div className="mb-8 xl:mb-0">
 			<div className="mb-8">
-				<img src={img} alt="" />
+				<img src={img} alt="" className="w-[368px]" />
 			</div>
 			<div>
 				<h3 className="font-medium text-2xl leading-7 mb-5">{title}</h3>
